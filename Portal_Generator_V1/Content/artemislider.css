@@ -1,0 +1,66 @@
+#slider-code {
+	height: 150px; overflow: hidden;
+}
+#slider-code .viewport {
+	height: 103px; overflow: hidden; float: left; position: relative;
+}
+#slider-code .buttons {
+	margin: 30px 10px 0px 0px; float: left; display: block;
+}
+#slider-code .next {
+	margin: 30px 0px 0px 10px;
+}
+#slider-code .disable {
+	visibility: hidden;
+}
+#slider-code .overview {
+	list-style: none; margin: 0px; padding: 0px; left: 0px; top: 0px; height: 100px; position: absolute;
+}
+#slider-code .overview li {
+	margin: 0px; padding: 1px; border: 1px solid rgb(220, 220, 220); border-image: none; height: 99px; float: left;
+}
+#slider-code .pager {
+	list-style: none; margin: 0px 0px 0px 45px; text-align: center; overflow: hidden; padding-top: 10px; clear: both;
+}
+#slider-code .pager li {
+	list-style: none; text-align: center; float: left;
+}
+#slider-code .pagenum {
+	padding: 5px; text-align: center; color: rgb(85, 85, 85); font-size: 14px; font-weight: bold; text-decoration: none; display: block; background-color: rgb(255, 255, 255);
+}
+.active {
+	color: rgb(255, 255, 255); background-color: rgb(85, 85, 85);
+}
+.pager li .square {
+	border: 1px solid gray; border-image: none; width: 10px; height: 10px; display: inline-block;
+}
+.pager li .square:hover {
+	background: rgb(51, 51, 51);
+}
+.pager li .square:active {
+	background: rgb(51, 51, 51);
+}
+.cs_article {
+	padding: 5px;
+}
+.cs_article h2 {
+	margin: 0px; padding: 0px;
+}
+.cs_article p {
+	margin: 0px; padding: 0px;
+}
+.cs_article h2 {
+	height: 21px; overflow: hidden; font-size: 19px; font-weight: bold; margin-bottom: 5px;
+}
+.cs_article h2 a {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+.cs_article p {
+	width: 80%; height: 40px; overflow: hidden; font-size: 12px;
+}
+.cs_article img {
+	border: currentColor; border-image: none; width: 30px; height: 30px; float: right;
+}
+.cs_article .moreLink {
+	width: 99%; text-align: right; font-size: 12px; display: block;
+}

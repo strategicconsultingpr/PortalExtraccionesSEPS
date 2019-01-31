@@ -1,0 +1,1164 @@
+.slm-layout-main {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; overflow: hidden;
+}
+.slm-edit-ecb {
+	width: 40px; clear: both; float: left;
+}
+.slm-edit-ecb div {
+	padding: 2px 0px 0px 2px; height: 23px; vertical-align: middle;
+}
+.slm-edit-link {
+	padding: 1px 0px 0px 1px; vertical-align: top;
+}
+.slm-display-link {
+	padding: 0px; vertical-align: top;
+}
+.presence-status-icon {
+	width: 12px; height: 12px; padding-top: 1px; padding-right: 5px; padding-left: 0px; float: left;
+}
+.wp-content {
+	margin: 6px 0px 6px 4px;
+}
+.cbq-layout-main {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%;
+}
+.toc-layout-main {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%;
+}
+.dfwp-column {
+	float: left;
+}
+.dfwp-list {
+	list-style: none; margin: 0px; padding: 0px;
+}
+.item {
+	padding: 6px 0px 6px 4px; clear: both;
+}
+.slm-dragdrop-source .item {
+	clear: none;
+}
+.slm-dragdrop-source .groupheader {
+	clear: none;
+}
+.centered {
+	text-align: center;
+}
+.link-item {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 8pt; text-decoration: none;
+}
+.link-item a {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 8pt; text-decoration: none;
+}
+.link-item a:link {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 8pt; text-decoration: none;
+}
+.link-item a:visited {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.link-item a:active {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.link-item a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.link-item-large {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 18pt; text-decoration: none;
+}
+.link-item-large a {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 18pt; text-decoration: none;
+}
+.link-item-large a:link {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 18pt; text-decoration: none;
+}
+.link-item-large a:visited {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.link-item-large a:active {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.link-item-large a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.description {
+	color: rgb(76, 76, 76); font-family: tahoma; font-size: 8pt;
+}
+.image-area-left {
+	padding-right: 5px; padding-left: 0px; float: left;
+}
+.image-area-right {
+	padding-right: 0px; padding-left: 5px; vertical-align: top; float: right;
+}
+.image-area-top {
+	padding-bottom: 5px;
+}
+.image {
+	border: 0px currentColor; border-image: none;
+}
+.image-fixed-width {
+	border: 0px currentColor; border-image: none; width: 90px;
+}
+.bullet {
+	background-position: left; border-width: 0px; border-color: inherit; padding-right: 0px; padding-left: 10px; vertical-align: top; background-image: url("/_layouts/images/lstbulet.gif"); background-repeat: no-repeat;
+}
+.groupheader {
+	text-align: left; color: rgb(0, 0, 0); clear: both; font-family: tahoma; font-size: 10pt; font-weight: bold; margin-bottom: 5px;
+}
+.band {
+	padding: 2px 0px 2px 3px; background-color: rgb(228, 232, 240);
+}
+.large {
+	font-size: 18pt;
+}
+.small {
+	font-size: 8pt;
+}
+.medium {
+	font-size: 10pt;
+}
+.centered {
+	text-align: center;
+}
+.separator {
+	border: 1px solid rgb(51, 51, 51); border-image: none; clear: both;
+}
+.whitespace {
+	margin: 0px; padding: 0px 0px 10px; clear: both;
+}
+.level-header {
+	padding: 2px 0px;
+}
+.level-band {
+	padding: 2px 0px 2px 3px; margin-right: 3px; margin-left: 0px; background-color: rgb(228, 232, 240);
+}
+.level-description {
+	color: rgb(76, 76, 76); font-family: tahoma; font-size: 8pt;
+}
+.level-description-padding {
+	padding-right: 0px; padding-bottom: 1px; padding-left: 15px;
+}
+.level-item-pos {
+	margin: 2px 3px; padding: 1px 0px;
+}
+.level-item {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 8pt;
+}
+.level-item a {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 8pt;
+}
+.level-item a:link {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 8pt;
+}
+.level-item a:visited {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.level-item a:active {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.level-item a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.level-section {
+	margin-bottom: 6px;
+}
+.level-bullet {
+	background-position: left; border-width: 0px; border-color: inherit; padding-right: 0px; padding-left: 10px; vertical-align: top; background-image: url("/_layouts/images/lstbulet.gif"); background-repeat: no-repeat;
+}
+.headertitle {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 10pt; font-weight: bold;
+}
+.headertitle a {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 10pt; font-weight: bold;
+}
+.headertitle a:link {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 10pt; font-weight: bold;
+}
+.headertitle a:visited {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.headertitle a:active {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.headertitle a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.headertitle-large {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 12pt; font-weight: bold;
+}
+.headertitle-large a {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 12pt; font-weight: bold;
+}
+.headertitle-large a:link {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 12pt; font-weight: bold;
+}
+.headertitle-large a:visited {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.headertitle-large a:active {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.headertitle-large a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.headertitle-small {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 8pt; font-weight: bold;
+}
+.headertitle-small a {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 8pt; font-weight: bold;
+}
+.headertitle-small a:link {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 8pt; font-weight: bold;
+}
+.headertitle-small a:visited {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.headertitle-small a:active {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.headertitle-small a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.headertitle-band {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 10pt; font-weight: bold;
+}
+.headertitle-band a {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 10pt; font-weight: bold;
+}
+.headertitle-band a:link {
+	color: rgb(0, 51, 153); font-family: tahoma; font-size: 10pt; font-weight: bold;
+}
+.headertitle-band a:visited {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.headertitle-band a:active {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.headertitle-band a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.cqfeed {
+	text-align: right;
+}
+.ms-slDlg-BodyContainer {
+	width: 100%; height: 100%;
+}
+.ms-slDlg-FieldLabel {
+	padding-top: 10px; padding-bottom: 2px;
+}
+.ms-slDlg-IndentedFieldLabel {
+	padding-top: 5px; padding-bottom: 2px; padding-left: 10px;
+}
+.ms-slDlg-FieldDescription {
+	color: gray;
+}
+.ms-slDlg-BrowseButton {
+	margin-right: 5px; margin-left: 10px;
+}
+.ms-slLinkDlg-InputField {
+	width: 275px;
+}
+.ms-slLinkDlg-FirstPanel {
+	text-align: left; padding-top: 10px; padding-right: 20px; padding-left: 50px;
+}
+.ms-slLinkDlg-Panel {
+	text-align: left; padding-top: 0px; padding-right: 20px; padding-left: 50px;
+}
+.ms-slLinkDlg-PeoplePanel {
+	padding: 0px 20px 10px 50px; text-align: left; margin-top: 5px; background-color: rgb(214, 232, 255);
+}
+.ms-slDlg-ActionText {
+	padding-left: 5px;
+}
+.ms-slDlg-ActionText a {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.ms-slDlg-ActionText a:visited {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.ms-slDlg-ActionText a:active {
+	color: rgb(65, 103, 175); text-decoration: none;
+}
+.ms-slDlg-ActionText a:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.ms-slGroupDlg-InputField {
+	width: 362px;
+}
+.ms-slGroupDlg-Panel {
+	text-align: left; padding-top: 5px; padding-right: 20px; padding-left: 50px;
+}
+.ms-slViewDlg-InputField {
+	width: 362px;
+}
+.ms-slViewDlg-Panel {
+	text-align: left; padding-top: 5px; padding-right: 20px; padding-left: 50px;
+}
+.ms-slViewDlg-FirstPanel {
+	text-align: left; padding-top: 20px; padding-right: 20px; padding-left: 50px;
+}
+.ms-slSortDlg-Panel {
+	text-align: left; padding-top: 0px; padding-right: 0px; padding-left: 0px;
+}
+.listItem div.callOut a {
+	font: bold 12.5pt/16pt arial, helvetica, sans-serif; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+.title-With-Background {
+	padding: 4px; margin-top: 5px; background-color: rgb(131, 176, 236);
+}
+div.title-With-Background a {
+	font: bold 12.5pt/16pt arial, helvetica, sans-serif; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+div.title-With-Background a:link {
+	font: bold 12.5pt/16pt arial, helvetica, sans-serif; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+div.title-With-Background a:hover {
+	font: bold 12.5pt/16pt arial, helvetica, sans-serif; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+div.title-With-Background a:visited {
+	font: bold 12.5pt/16pt arial, helvetica, sans-serif; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+div.title-With-Background a:active {
+	font: bold 12.5pt/16pt arial, helvetica, sans-serif; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+img.media-preview {
+	border: currentColor; border-image: none;
+}
+span.media-title {
+	display: block;
+}
+h1.ms-rteElement-H1 {
+	-ms-name: "Heading 1";
+}
+.ms-rteElement-H1 {
+	font-size: 2em; font-weight: normal;
+}
+h2.ms-rteElement-H2 {
+	-ms-name: "Heading 2";
+}
+.ms-rteElement-H2 {
+	font-size: 1.3em; font-weight: normal;
+}
+h3.ms-rteElement-H3 {
+	-ms-name: "Heading 3";
+}
+.ms-rteElement-H3 {
+	font-size: 1em;
+}
+h4.ms-rteElement-H4 {
+	-ms-name: "Heading 4";
+}
+.ms-rteElement-H4 {
+	font-size: 1em; font-style: italic; font-weight: normal;
+}
+h1.ms-rteElement-H1B {
+	-ms-name: "Colored Heading 1";
+}
+.ms-rteElement-H1B {
+	color: rgb(0, 114, 188); font-size: 2em; font-weight: normal;
+}
+h2.ms-rteElement-H2B {
+	-ms-name: "Colored Heading 2";
+}
+.ms-rteElement-H2B {
+	color: rgb(202, 0, 120); font-size: 1.3em; font-weight: normal;
+}
+h3.ms-rteElement-H3B {
+	-ms-name: "Colored Heading 3";
+}
+.ms-rteElement-H3B {
+	color: rgb(0, 147, 202); font-size: 2.2em;
+}
+h4.ms-rteElement-H4B {
+	-ms-name: "Colored Heading 4";
+}
+.ms-rteElement-H4B {
+	color: rgb(5, 128, 54); font-size: 1em; font-style: italic; font-weight: normal;
+}
+hr.ms-rteElement-Hr {
+	-ms-name: "Horizontal Rule";
+}
+.ms-rteElement-Hr {
+	height: 1px; background-color: rgb(182, 182, 182);
+}
+p.ms-rteElement-P {
+	-ms-name: "Paragraph";
+}
+.ms-rteElement-P {
+	color: rgb(87, 97, 112);
+}
+div.ms-rteElement-Callout1 {
+	-ms-name: "Callout 1";
+}
+.ms-rteElement-Callout1 {
+	padding: 10px; border: 1px solid rgb(253, 159, 8); border-image: none; width: 25em; float: left; background-color: rgb(254, 244, 228);
+}
+div.ms-rteElement-Callout2 {
+	-ms-name: "Callout 2";
+}
+.ms-rteElement-Callout2 {
+	padding: 10px; border: 1px solid rgb(54, 176, 0); border-image: none; width: 25em; color: rgb(53, 55, 56); float: right; background-color: rgb(242, 242, 242);
+}
+div.ms-rteElement-Callout3 {
+	-ms-name: "Callout 3";
+}
+.ms-rteElement-Callout3 {
+	padding: 10px; width: 25em; color: rgb(202, 0, 120); font-style: italic; float: right;
+}
+div.ms-rteElement-Callout4 {
+	-ms-name: "Callout 4";
+}
+.ms-rteElement-Callout4 {
+	padding: 10px; border: 1px solid rgb(0, 173, 238); border-image: none; width: 20em; color: rgb(0, 86, 119); font-family: Verdana, Geneva, sans-serif; float: right; background-color: rgb(216, 244, 255);
+}
+.ms-rteStyle-Normal {
+	color: rgb(103, 103, 103); font-family: Verdana, Arial, sans-serif; font-size: 8pt; background-color: rgb(255, 255, 255); -ms-name: "Normal";
+}
+.ms-rteStyle-Highlight {
+	color: rgb(49, 42, 38); background-color: rgb(250, 224, 50); -ms-name: "Highlight";
+}
+.ms-rteStyle-Byline {
+	color: rgb(182, 182, 182); -ms-name: "By Line";
+}
+.ms-rteStyle-Tagline {
+	color: rgb(139, 139, 139); font-size: 1.3em; -ms-name: "Tag Line";
+}
+.ms-rteStyle-Comment {
+	color: rgb(54, 176, 0); font-style: italic; text-shadow: 0px 0px 5px #000; -ms-name: "Comment";
+}
+.ms-rteStyle-References {
+	color: rgb(130, 130, 130); -ms-name: "References";
+}
+.ms-rteStyle-Caption {
+	color: rgb(0, 173, 238); -ms-name: "Caption";
+}
+.ms-rteForeColor-1 {
+	color: darkred; -ms-name: ""; -ms-color: "Dark Red";
+}
+.ms-rteForeColor-2 {
+	color: red; -ms-name: ""; -ms-color: "Red";
+}
+.ms-rteForeColor-3 {
+	color: orange; -ms-name: ""; -ms-color: "Gold";
+}
+.ms-rteForeColor-4 {
+	color: yellow; -ms-name: ""; -ms-color: "Yellow";
+}
+.ms-rteForeColor-5 {
+	color: lightgreen; -ms-name: ""; -ms-color: "Light Green";
+}
+.ms-rteForeColor-6 {
+	color: green; -ms-name: ""; -ms-color: "Dark Green";
+}
+.ms-rteForeColor-7 {
+	color: lightblue; -ms-name: ""; -ms-color: "Sky Blue";
+}
+.ms-rteForeColor-8 {
+	color: blue; -ms-name: ""; -ms-color: "Blue";
+}
+.ms-rteForeColor-9 {
+	color: darkblue; -ms-name: ""; -ms-color: "Dark Blue";
+}
+.ms-rteForeColor-10 {
+	color: purple; -ms-name: ""; -ms-color: "Dark Purple";
+}
+.ms-rteBackColor-1 {
+	background-color: darkred; -ms-name: ""; -ms-color: "Dark Red";
+}
+.ms-rteBackColor-2 {
+	background-color: red; -ms-name: ""; -ms-color: "Red";
+}
+.ms-rteBackColor-3 {
+	background-color: orange; -ms-name: ""; -ms-color: "Gold";
+}
+.ms-rteBackColor-4 {
+	background-color: yellow; -ms-name: ""; -ms-color: "Yellow";
+}
+.ms-rteBackColor-5 {
+	background-color: lightgreen; -ms-name: ""; -ms-color: "Light Green";
+}
+.ms-rteBackColor-6 {
+	background-color: green; -ms-name: ""; -ms-color: "Dark Green";
+}
+.ms-rteBackColor-7 {
+	background-color: lightblue; -ms-name: ""; -ms-color: "Sky Blue";
+}
+.ms-rteBackColor-8 {
+	background-color: blue; -ms-name: ""; -ms-color: "Blue";
+}
+.ms-rteBackColor-9 {
+	background-color: darkblue; -ms-name: ""; -ms-color: "Dark Blue";
+}
+.ms-rteBackColor-10 {
+	background-color: purple; -ms-name: ""; -ms-color: "Dark Purple";
+}
+.ms-rteFontFace-1 {
+	font-family: tahoma; -ms-name: "Tahoma";
+}
+.ms-rteFontFace-2 {
+	font-family: courier, monospace; -ms-name: "Courier";
+}
+.ms-rteFontFace-3 {
+	font-family: "Times New Roman", Times, serif; -ms-name: "Times New Roman";
+}
+.ms-rteFontFace-4 {
+	font-family: "Comic Sans", "Comic Sans MS", cursive; -ms-name: "Comic Sans";
+}
+.ms-rteFontFace-5 {
+	font-family: Calibri; -ms-name: "Calibri";
+}
+.ms-rteFontFace-6 {
+	font-family: Georgia; -ms-name: "Georgia";
+}
+.ms-rteFontFace-7 {
+	font-family: Impact; -ms-name: "Impact";
+}
+.ms-rteFontFace-8 {
+	font-family: "Trebuchet MS", helvetica; -ms-name: "Trebuchet MS";
+}
+.ms-rteFontFace-9 {
+	font-family: "Palatino Linotype", Palatino, serif; -ms-name: "Palatino Linotype";
+}
+.ms-rteFontFace-10 {
+	font-family: "Lucida Console", monaco, sans-serif; -ms-name: "Lucida Console";
+}
+.ms-rteFontFace-11 {
+	font-family: garamond; -ms-name: "Garamond";
+}
+.ms-rteThemeFontFace-1 {
+	font-family: verdana; -ms-name: "Verdana";
+}
+.ms-rteThemeFontFace-2 {
+	font-family: arial; -ms-name: "Arial";
+}
+.ms-rteFontSize-1 {
+	font-size: 8pt;
+}
+.ms-rteFontSize-2 {
+	font-size: 10pt;
+}
+.ms-rteFontSize-3 {
+	font-size: 12pt;
+}
+.ms-rteFontSize-4 {
+	font-size: 18pt;
+}
+.ms-rteFontSize-5 {
+	font-size: 24pt;
+}
+.ms-rteFontSize-6 {
+	font-size: 36pt;
+}
+.ms-rteFontSize-7 {
+	font-size: 48pt;
+}
+.ms-rteFontSize-8 {
+	font-size: 72pt;
+}
+.ms-rteThemeForeColor-1-0 {
+	color: rgb(255, 255, 255); -ms-name: "Light 1"; -ms-color: "White";
+}
+.ms-rteThemeForeColor-2-0 {
+	color: rgb(0, 0, 0); -ms-name: "Dark 1"; -ms-color: "Black";
+}
+.ms-rteThemeForeColor-3-0 {
+	color: rgb(245, 246, 247); -ms-name: "Light 2"; -ms-color: "White";
+}
+.ms-rteThemeForeColor-4-0 {
+	color: rgb(24, 39, 56); -ms-name: "Dark 2"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeForeColor-5-0 {
+	color: rgb(0, 114, 188); -ms-name: "Accent 1"; -ms-color: "Dark Blue";
+}
+.ms-rteThemeForeColor-6-0 {
+	color: rgb(236, 0, 140); -ms-name: "Accent 2"; -ms-color: "Pink";
+}
+.ms-rteThemeForeColor-7-0 {
+	color: rgb(0, 173, 238); -ms-name: "Accent 3"; -ms-color: "Turquoise";
+}
+.ms-rteThemeForeColor-8-0 {
+	color: rgb(253, 159, 8); -ms-name: "Accent 4"; -ms-color: "Orange";
+}
+.ms-rteThemeForeColor-9-0 {
+	color: rgb(54, 176, 0); -ms-name: "Accent 5"; -ms-color: "Dark Green";
+}
+.ms-rteThemeForeColor-10-0 {
+	color: rgb(250, 224, 50); -ms-name: "Accent 6"; -ms-color: "Yellow";
+}
+.ms-rteThemeForeColor-1-1 {
+	color: rgb(242, 242, 242); -ms-name: "Light 1 Lightest"; -ms-color: "White";
+}
+.ms-rteThemeForeColor-2-1 {
+	color: rgb(127, 127, 127); -ms-name: "Dark 1 Lightest"; -ms-color: "Gray-50%";
+}
+.ms-rteThemeForeColor-3-1 {
+	color: rgb(217, 221, 225); -ms-name: "Light 2 Lightest"; -ms-color: "Ice Blue";
+}
+.ms-rteThemeForeColor-4-1 {
+	color: rgb(224, 232, 242); -ms-name: "Dark 2 Lightest"; -ms-color: "Ice Blue";
+}
+.ms-rteThemeForeColor-5-1 {
+	color: rgb(190, 229, 255); -ms-name: "Accent 1 Lightest"; -ms-color: "Light Blue";
+}
+.ms-rteThemeForeColor-6-1 {
+	color: rgb(255, 200, 232); -ms-name: "Accent 2 Lightest"; -ms-color: "Pink";
+}
+.ms-rteThemeForeColor-7-1 {
+	color: rgb(200, 240, 255); -ms-name: "Accent 3 Lightest"; -ms-color: "Light Turquoise";
+}
+.ms-rteThemeForeColor-8-1 {
+	color: rgb(254, 235, 205); -ms-name: "Accent 4 Lightest"; -ms-color: "Light Orange";
+}
+.ms-rteThemeForeColor-9-1 {
+	color: rgb(208, 255, 188); -ms-name: "Accent 5 Lightest"; -ms-color: "Light Green";
+}
+.ms-rteThemeForeColor-10-1 {
+	color: rgb(254, 248, 214); -ms-name: "Accent 6 Lightest"; -ms-color: "Light Yellow";
+}
+.ms-rteThemeForeColor-1-2 {
+	color: rgb(216, 216, 216); -ms-name: "Light 1 Lighter"; -ms-color: "Gray-25%";
+}
+.ms-rteThemeForeColor-2-2 {
+	color: rgb(89, 89, 89); -ms-name: "Dark 1 Lighter"; -ms-color: "Gray-80%";
+}
+.ms-rteThemeForeColor-3-2 {
+	color: rgb(176, 184, 192); -ms-name: "Light 2 Lighter"; -ms-color: "Ice Blue";
+}
+.ms-rteThemeForeColor-4-2 {
+	color: rgb(179, 199, 222); -ms-name: "Dark 2 Lighter"; -ms-color: "Ice Blue";
+}
+.ms-rteThemeForeColor-5-2 {
+	color: rgb(126, 204, 255); -ms-name: "Accent 1 Lighter"; -ms-color: "Light Turquoise";
+}
+.ms-rteThemeForeColor-6-2 {
+	color: rgb(255, 145, 210); -ms-name: "Accent 2 Lighter"; -ms-color: "Pink";
+}
+.ms-rteThemeForeColor-7-2 {
+	color: rgb(146, 225, 255); -ms-name: "Accent 3 Lighter"; -ms-color: "Light Turquoise";
+}
+.ms-rteThemeForeColor-8-2 {
+	color: rgb(254, 216, 156); -ms-name: "Accent 4 Lighter"; -ms-color: "Light Orange";
+}
+.ms-rteThemeForeColor-9-2 {
+	color: rgb(162, 255, 121); -ms-name: "Accent 5 Lighter"; -ms-color: "Light Green";
+}
+.ms-rteThemeForeColor-10-2 {
+	color: rgb(253, 242, 173); -ms-name: "Accent 6 Lighter"; -ms-color: "Light Yellow";
+}
+.ms-rteThemeForeColor-1-3 {
+	color: rgb(191, 191, 191); -ms-name: "Light 1 Medium"; -ms-color: "Gray-25%";
+}
+.ms-rteThemeForeColor-2-3 {
+	color: rgb(63, 63, 63); -ms-name: "Dark 1 Medium"; -ms-color: "Gray-80%";
+}
+.ms-rteThemeForeColor-3-3 {
+	color: rgb(109, 123, 136); -ms-name: "Light 2 Medium"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeForeColor-4-3 {
+	color: rgb(104, 144, 190); -ms-name: "Dark 2 Medium"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeForeColor-5-3 {
+	color: rgb(61, 178, 255); -ms-name: "Accent 1 Medium"; -ms-color: "Blue";
+}
+.ms-rteThemeForeColor-6-3 {
+	color: rgb(255, 90, 188); -ms-name: "Accent 2 Medium"; -ms-color: "Pink";
+}
+.ms-rteThemeForeColor-7-3 {
+	color: rgb(91, 210, 255); -ms-name: "Accent 3 Medium"; -ms-color: "Light Turquoise";
+}
+.ms-rteThemeForeColor-8-3 {
+	color: rgb(253, 197, 106); -ms-name: "Accent 4 Medium"; -ms-color: "Light Orange";
+}
+.ms-rteThemeForeColor-9-3 {
+	color: rgb(116, 255, 54); -ms-name: "Accent 5 Medium"; -ms-color: "Green";
+}
+.ms-rteThemeForeColor-10-3 {
+	color: rgb(252, 236, 132); -ms-name: "Accent 6 Medium"; -ms-color: "Light Yellow";
+}
+.ms-rteThemeForeColor-1-4 {
+	color: rgb(165, 165, 165); -ms-name: "Light 1 Darker"; -ms-color: "Gray-50%";
+}
+.ms-rteThemeForeColor-2-4 {
+	color: rgb(38, 38, 38); -ms-name: "Dark 1 Darker"; -ms-color: "Gray-80%";
+}
+.ms-rteThemeForeColor-3-4 {
+	color: rgb(54, 61, 68); -ms-name: "Light 2 Darker"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeForeColor-4-4 {
+	color: rgb(56, 91, 131); -ms-name: "Dark 2 Darker"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeForeColor-5-4 {
+	color: rgb(0, 85, 141); -ms-name: "Accent 1 Darker"; -ms-color: "Dark Blue";
+}
+.ms-rteThemeForeColor-6-4 {
+	color: rgb(177, 0, 105); -ms-name: "Accent 2 Darker"; -ms-color: "Plum";
+}
+.ms-rteThemeForeColor-7-4 {
+	color: rgb(0, 129, 178); -ms-name: "Accent 3 Darker"; -ms-color: "Turquoise";
+}
+.ms-rteThemeForeColor-8-4 {
+	color: rgb(194, 120, 1); -ms-name: "Accent 4 Darker"; -ms-color: "Brown";
+}
+.ms-rteThemeForeColor-9-4 {
+	color: rgb(40, 132, 0); -ms-name: "Accent 5 Darker"; -ms-color: "Dark Green";
+}
+.ms-rteThemeForeColor-10-4 {
+	color: rgb(219, 191, 5); -ms-name: "Accent 6 Darker"; -ms-color: "Yellow";
+}
+.ms-rteThemeForeColor-1-5 {
+	color: rgb(127, 127, 127); -ms-name: "Light 1 Darkest"; -ms-color: "Gray-50%";
+}
+.ms-rteThemeForeColor-2-5 {
+	color: rgb(12, 12, 12); -ms-name: "Dark 1 Darkest"; -ms-color: "Black";
+}
+.ms-rteThemeForeColor-3-5 {
+	color: rgb(21, 24, 27); -ms-name: "Light 2 Darkest"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeForeColor-4-5 {
+	color: rgb(36, 59, 86); -ms-name: "Dark 2 Darkest"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeForeColor-5-5 {
+	color: rgb(0, 57, 94); -ms-name: "Accent 1 Darkest"; -ms-color: "Dark Blue";
+}
+.ms-rteThemeForeColor-6-5 {
+	color: rgb(118, 0, 70); -ms-name: "Accent 2 Darkest"; -ms-color: "Plum";
+}
+.ms-rteThemeForeColor-7-5 {
+	color: rgb(0, 86, 119); -ms-name: "Accent 3 Darkest"; -ms-color: "Dark Teal";
+}
+.ms-rteThemeForeColor-8-5 {
+	color: rgb(129, 80, 1); -ms-name: "Accent 4 Darkest"; -ms-color: "Brown";
+}
+.ms-rteThemeForeColor-9-5 {
+	color: rgb(27, 88, 0); -ms-name: "Accent 5 Darkest"; -ms-color: "Dark Green";
+}
+.ms-rteThemeForeColor-10-5 {
+	color: rgb(146, 127, 3); -ms-name: "Accent 6 Darkest"; -ms-color: "Dark Yellow";
+}
+.ms-rteThemeBackColor-1-0 {
+	background-color: rgb(255, 255, 255); -ms-name: "Light 1"; -ms-color: "White";
+}
+.ms-rteThemeBackColor-2-0 {
+	background-color: rgb(0, 0, 0); -ms-name: "Dark 1"; -ms-color: "Black";
+}
+.ms-rteThemeBackColor-3-0 {
+	background-color: rgb(245, 246, 247); -ms-name: "Light 2"; -ms-color: "White";
+}
+.ms-rteThemeBackColor-4-0 {
+	background-color: rgb(24, 39, 56); -ms-name: "Dark 2"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeBackColor-5-0 {
+	background-color: rgb(0, 114, 188); -ms-name: "Accent 1"; -ms-color: "Dark Blue";
+}
+.ms-rteThemeBackColor-6-0 {
+	background-color: rgb(236, 0, 140); -ms-name: "Accent 2"; -ms-color: "Pink";
+}
+.ms-rteThemeBackColor-7-0 {
+	background-color: rgb(0, 173, 238); -ms-name: "Accent 3"; -ms-color: "Turquoise";
+}
+.ms-rteThemeBackColor-8-0 {
+	background-color: rgb(253, 159, 8); -ms-name: "Accent 4"; -ms-color: "Orange";
+}
+.ms-rteThemeBackColor-9-0 {
+	background-color: rgb(54, 176, 0); -ms-name: "Accent 5"; -ms-color: "Dark Green";
+}
+.ms-rteThemeBackColor-10-0 {
+	background-color: rgb(250, 224, 50); -ms-name: "Accent 6"; -ms-color: "Yellow";
+}
+.ms-rteThemeBackColor-1-1 {
+	background-color: rgb(242, 242, 242); -ms-name: "Light 1 Lightest"; -ms-color: "White";
+}
+.ms-rteThemeBackColor-2-1 {
+	background-color: rgb(127, 127, 127); -ms-name: "Dark 1 Lightest"; -ms-color: "Gray-50%";
+}
+.ms-rteThemeBackColor-3-1 {
+	background-color: rgb(217, 221, 225); -ms-name: "Light 2 Lightest"; -ms-color: "Ice Blue";
+}
+.ms-rteThemeBackColor-4-1 {
+	background-color: rgb(224, 232, 242); -ms-name: "Dark 2 Lightest"; -ms-color: "Ice Blue";
+}
+.ms-rteThemeBackColor-5-1 {
+	background-color: rgb(190, 229, 255); -ms-name: "Accent 1 Lightest"; -ms-color: "Light Blue";
+}
+.ms-rteThemeBackColor-6-1 {
+	background-color: rgb(255, 200, 232); -ms-name: "Accent 2 Lightest"; -ms-color: "Pink";
+}
+.ms-rteThemeBackColor-7-1 {
+	background-color: rgb(200, 240, 255); -ms-name: "Accent 3 Lightest"; -ms-color: "Light Turquoise";
+}
+.ms-rteThemeBackColor-8-1 {
+	background-color: rgb(254, 235, 205); -ms-name: "Accent 4 Lightest"; -ms-color: "Light Orange";
+}
+.ms-rteThemeBackColor-9-1 {
+	background-color: rgb(208, 255, 188); -ms-name: "Accent 5 Lightest"; -ms-color: "Light Green";
+}
+.ms-rteThemeBackColor-10-1 {
+	background-color: rgb(254, 248, 214); -ms-name: "Accent 6 Lightest"; -ms-color: "Light Yellow";
+}
+.ms-rteThemeBackColor-1-2 {
+	background-color: rgb(216, 216, 216); -ms-name: "Light 1 Lighter"; -ms-color: "Gray-25%";
+}
+.ms-rteThemeBackColor-2-2 {
+	background-color: rgb(89, 89, 89); -ms-name: "Dark 1 Lighter"; -ms-color: "Gray-80%";
+}
+.ms-rteThemeBackColor-3-2 {
+	background-color: rgb(176, 184, 192); -ms-name: "Light 2 Lighter"; -ms-color: "Ice Blue";
+}
+.ms-rteThemeBackColor-4-2 {
+	background-color: rgb(179, 199, 222); -ms-name: "Dark 2 Lighter"; -ms-color: "Ice Blue";
+}
+.ms-rteThemeBackColor-5-2 {
+	background-color: rgb(126, 204, 255); -ms-name: "Accent 1 Lighter"; -ms-color: "Light Turquoise";
+}
+.ms-rteThemeBackColor-6-2 {
+	background-color: rgb(255, 145, 210); -ms-name: "Accent 2 Lighter"; -ms-color: "Pink";
+}
+.ms-rteThemeBackColor-7-2 {
+	background-color: rgb(146, 225, 255); -ms-name: "Accent 3 Lighter"; -ms-color: "Light Turquoise";
+}
+.ms-rteThemeBackColor-8-2 {
+	background-color: rgb(254, 216, 156); -ms-name: "Accent 4 Lighter"; -ms-color: "Light Orange";
+}
+.ms-rteThemeBackColor-9-2 {
+	background-color: rgb(162, 255, 121); -ms-name: "Accent 5 Lighter"; -ms-color: "Light Green";
+}
+.ms-rteThemeBackColor-10-2 {
+	background-color: rgb(253, 242, 173); -ms-name: "Accent 6 Lighter"; -ms-color: "Light Yellow";
+}
+.ms-rteThemeBackColor-1-3 {
+	background-color: rgb(191, 191, 191); -ms-name: "Light 1 Medium"; -ms-color: "Gray-25%";
+}
+.ms-rteThemeBackColor-2-3 {
+	background-color: rgb(63, 63, 63); -ms-name: "Dark 1 Medium"; -ms-color: "Gray-80%";
+}
+.ms-rteThemeBackColor-3-3 {
+	background-color: rgb(109, 123, 136); -ms-name: "Light 2 Medium"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeBackColor-4-3 {
+	background-color: rgb(104, 144, 190); -ms-name: "Dark 2 Medium"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeBackColor-5-3 {
+	background-color: rgb(61, 178, 255); -ms-name: "Accent 1 Medium"; -ms-color: "Blue";
+}
+.ms-rteThemeBackColor-6-3 {
+	background-color: rgb(255, 90, 188); -ms-name: "Accent 2 Medium"; -ms-color: "Pink";
+}
+.ms-rteThemeBackColor-7-3 {
+	background-color: rgb(91, 210, 255); -ms-name: "Accent 3 Medium"; -ms-color: "Light Turquoise";
+}
+.ms-rteThemeBackColor-8-3 {
+	background-color: rgb(253, 197, 106); -ms-name: "Accent 4 Medium"; -ms-color: "Light Orange";
+}
+.ms-rteThemeBackColor-9-3 {
+	background-color: rgb(116, 255, 54); -ms-name: "Accent 5 Medium"; -ms-color: "Green";
+}
+.ms-rteThemeBackColor-10-3 {
+	background-color: rgb(252, 236, 132); -ms-name: "Accent 6 Medium"; -ms-color: "Light Yellow";
+}
+.ms-rteThemeBackColor-1-4 {
+	background-color: rgb(165, 165, 165); -ms-name: "Light 1 Darker"; -ms-color: "Gray-50%";
+}
+.ms-rteThemeBackColor-2-4 {
+	background-color: rgb(38, 38, 38); -ms-name: "Dark 1 Darker"; -ms-color: "Gray-80%";
+}
+.ms-rteThemeBackColor-3-4 {
+	background-color: rgb(54, 61, 68); -ms-name: "Light 2 Darker"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeBackColor-4-4 {
+	background-color: rgb(56, 91, 131); -ms-name: "Dark 2 Darker"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeBackColor-5-4 {
+	background-color: rgb(0, 85, 141); -ms-name: "Accent 1 Darker"; -ms-color: "Dark Blue";
+}
+.ms-rteThemeBackColor-6-4 {
+	background-color: rgb(177, 0, 105); -ms-name: "Accent 2 Darker"; -ms-color: "Plum";
+}
+.ms-rteThemeBackColor-7-4 {
+	background-color: rgb(0, 129, 178); -ms-name: "Accent 3 Darker"; -ms-color: "Turquoise";
+}
+.ms-rteThemeBackColor-8-4 {
+	background-color: rgb(194, 120, 1); -ms-name: "Accent 4 Darker"; -ms-color: "Brown";
+}
+.ms-rteThemeBackColor-9-4 {
+	background-color: rgb(40, 132, 0); -ms-name: "Accent 5 Darker"; -ms-color: "Dark Green";
+}
+.ms-rteThemeBackColor-10-4 {
+	background-color: rgb(219, 191, 5); -ms-name: "Accent 6 Darker"; -ms-color: "Yellow";
+}
+.ms-rteThemeBackColor-1-5 {
+	background-color: rgb(127, 127, 127); -ms-name: "Light 1 Darkest"; -ms-color: "Gray-50%";
+}
+.ms-rteThemeBackColor-2-5 {
+	background-color: rgb(12, 12, 12); -ms-name: "Dark 1 Darkest"; -ms-color: "Black";
+}
+.ms-rteThemeBackColor-3-5 {
+	background-color: rgb(21, 24, 27); -ms-name: "Light 2 Darkest"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeBackColor-4-5 {
+	background-color: rgb(36, 59, 86); -ms-name: "Dark 2 Darkest"; -ms-color: "Blue Gray";
+}
+.ms-rteThemeBackColor-5-5 {
+	background-color: rgb(0, 57, 94); -ms-name: "Accent 1 Darkest"; -ms-color: "Dark Blue";
+}
+.ms-rteThemeBackColor-6-5 {
+	background-color: rgb(118, 0, 70); -ms-name: "Accent 2 Darkest"; -ms-color: "Plum";
+}
+.ms-rteThemeBackColor-7-5 {
+	background-color: rgb(0, 86, 119); -ms-name: "Accent 3 Darkest"; -ms-color: "Dark Teal";
+}
+.ms-rteThemeBackColor-8-5 {
+	background-color: rgb(129, 80, 1); -ms-name: "Accent 4 Darkest"; -ms-color: "Brown";
+}
+.ms-rteThemeBackColor-9-5 {
+	background-color: rgb(27, 88, 0); -ms-name: "Accent 5 Darkest"; -ms-color: "Dark Green";
+}
+.ms-rteThemeBackColor-10-5 {
+	background-color: rgb(146, 127, 3); -ms-name: "Accent 6 Darkest"; -ms-color: "Dark Yellow";
+}
+.ms-rteImage-0 {
+	-ms-name: "No border";
+}
+.ms-rteImage-1 {
+	background-position: top; border: 1px solid rgb(56, 91, 131); border-image: none; background-image: url("/_layouts/images/tabtitlerowbottombg.png"); background-repeat: repeat-x; background-color: rgb(24, 39, 56); -ms-name: "Thin line border";
+}
+.ms-rteImage-2 {
+	border-width: 1px; border-style: solid; border-color: rgb(216, 216, 216) rgb(191, 191, 191) rgb(191, 191, 191) rgb(216, 216, 216); padding: 2px; -ms-name: "Table border";
+}
+.ms-rteImage-3 {
+	background-position: left bottom; padding: 15px; background-image: url("/_layouts/images/tabtitlerowbottombg.png"); background-attachment: fixed; background-repeat: repeat-x; background-color: rgb(24, 39, 56); -ms-name: "Dark border";
+}
+.ms-rteImage-4 {
+	background-position: top; border-width: 1px; border-style: solid; border-color: rgb(216, 216, 216) rgb(191, 191, 191) rgb(191, 191, 191) rgb(216, 216, 216); padding: 6px 6px 33px; background-image: url("/_layouts/images/selbg.png"); background-repeat: repeat-x; background-color: rgb(242, 242, 242); -ms-name: "Light border";
+}
+.ms-rteTable-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableHeaderFirstCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableHeaderLastCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableHeaderOddCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableHeaderEvenCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableFirstCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableLastCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableOddCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableEvenCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableFooterFirstCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableFooterLastCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableFooterOddCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTableFooterEvenCol-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+td.ms-rteTable-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+th.ms-rteTable-default {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rtetablecells {
+	padding: 2px; border: 1px solid rgb(196, 196, 196); border-image: none; vertical-align: top; -ms-name: "Default Table Style - Light";
+}
+.ms-rteTable-0 {
+	border-width: 0px; border-collapse: collapse; -ms-name: "Table Style 1 - Clear";
+}
+.ms-rteTable-1 {
+	text-align: left; color: rgb(0, 85, 141); line-height: 2; font-size: 1em; vertical-align: top; -ms-name: "Table Style 2 - Light Banded";
+}
+.ms-rteTable-1 th.ms-rteTableHeaderRow-1 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(255, 255, 255);
+}
+.ms-rteTable-1 tr.ms-rteTableFooterRow-1 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(255, 255, 255);
+}
+.ms-rteTable-1 th.ms-rteTableHeaderFirstCol-1 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.ms-rteTable-1 th.ms-rteTableFooterFirstCol-1 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.ms-rteTable-1 th.ms-rteTableHeaderOddCol-1 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.ms-rteTable-1 td.ms-rteTableFooterOddCol-1 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.ms-rteTable-1 th.ms-rteTableHeaderEvenCol-1 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.ms-rteTable-1 td.ms-rteTableFooterEvenCol-1 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.ms-rteTable-1 th.ms-rteTableHeaderLastCol-1 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.ms-rteTable-1 th.ms-rteTableFooterLastCol-1 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.ms-rteTable-1 tr.ms-rteTableOddRow-1 {
+	background-color: rgb(190, 229, 255);
+}
+.ms-rteTable-1 tr.ms-rteTableEvenRow-1 {
+	background-color: rgb(255, 255, 255);
+}
+.ms-rteTable-1 th.ms-rteTableFirstCol-1 {
+	font-weight: normal;
+}
+.ms-rteTable-1 td.ms-rteTableLastCol-1 {
+	font-weight: normal;
+}
+.ms-rteTable-1 td.ms-rteTableOddCol-1 {
+	
+}
+.ms-rteTable-1 td.ms-rteTableEvenCol-1 {
+	
+}
+.ms-rteTable-6 {
+	text-align: left; color: rgb(0, 0, 0); line-height: 2; font-size: 1em; vertical-align: top; -ms-name: "Table Style 3 - Medium Two Tones";
+}
+.ms-rteTable-6 th.ms-rteTableHeaderRow-6 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(255, 255, 255);
+}
+.ms-rteTable-6 tr.ms-rteTableFooterRow-6 {
+	border-top-color: rgb(0, 114, 188); border-bottom-color: rgb(0, 114, 188); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(255, 255, 255);
+}
+.ms-rteTable-6 th.ms-rteTableHeaderFirstCol-6 {
+	color: rgb(255, 255, 255); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(0, 114, 188);
+}
+.ms-rteTable-6 th.ms-rteTableFooterFirstCol-6 {
+	color: rgb(255, 255, 255); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(0, 114, 188);
+}
+.ms-rteTable-6 th.ms-rteTableHeaderOddCol-6 {
+	color: rgb(255, 255, 255); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(0, 114, 188);
+}
+.ms-rteTable-6 td.ms-rteTableFooterOddCol-6 {
+	color: rgb(255, 255, 255); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(0, 114, 188);
+}
+.ms-rteTable-6 th.ms-rteTableHeaderEvenCol-6 {
+	color: rgb(255, 255, 255); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(0, 114, 188);
+}
+.ms-rteTable-6 td.ms-rteTableFooterEvenCol-6 {
+	color: rgb(255, 255, 255); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(0, 114, 188);
+}
+.ms-rteTable-6 th.ms-rteTableHeaderLastCol-6 {
+	color: rgb(255, 255, 255); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(0, 114, 188);
+}
+.ms-rteTable-6 td.ms-rteTableFooterLastCol-6 {
+	color: rgb(255, 255, 255); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(0, 114, 188);
+}
+.ms-rteTable-6 tr.ms-rteTableOddRow-6 {
+	background-color: rgb(216, 216, 216);
+}
+.ms-rteTable-6 tr.ms-rteTableEvenRow-6 {
+	background-color: rgb(255, 255, 255);
+}
+.ms-rteTable-6 th.ms-rteTableFirstCol-6 {
+	font-weight: normal;
+}
+.ms-rteTable-6 td.ms-rteTableLastCol-6 {
+	font-weight: normal;
+}
+.ms-rteTable-6 td.ms-rteTableOddCol-6 {
+	
+}
+.ms-rteTable-6 td.ms-rteTableEvenCol-6 {
+	
+}
+.ms-rteTableGrid td {
+	border: 1px dotted black; border-image: none;
+}
+.ms-rteTableGrid th {
+	border: 1px dotted black; border-image: none;
+}
+.ms-rtePosition-1 {
+	float: left; -ms-name: "Left";
+}
+.ms-rtePosition-2 {
+	float: right; -ms-name: "Right";
+}
+.ms-rtePosition-3 {
+	vertical-align: text-top; -ms-name: "Top";
+}
+.ms-rtePosition-4 {
+	vertical-align: middle; -ms-name: "Middle";
+}
+.ms-rtePosition-5 {
+	vertical-align: text-bottom; -ms-name: "Bottom";
+}
+.ms-rtestate-write {
+	cursor: text; min-height: 1em;
+}
+.ms-asset-icon {
+	border-width: 0px; margin: 0px 5px;
+}
+.ms-rtestate-field table {
+	border-collapse: collapse;
+}
+.ms-rtestate-write table {
+	border-collapse: collapse;
+}
+.ms-rtestate-write p {
+	margin: 0px 0px 10px;
+}
+.ms-rtestate-read p {
+	margin: 0px 0px 10px;
+}
+.ms-rte-autocomplete {
+	border-width: 1px; border-style: solid; border-color: rgb(223, 223, 223) rgb(192, 192, 192) rgb(192, 192, 192) rgb(223, 223, 223); padding-top: 10px; padding-bottom: 10px; font-family: Verdana; font-size: 1em; position: absolute; background-color: rgb(250, 250, 250);
+}
+.ms-rte-autocomplete-results div {
+	color: rgb(101, 104, 107); overflow: hidden; padding-right: 10px; padding-left: 10px; border-top-color: transparent; border-bottom-color: transparent; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.ms-rte-autocomplete-results div.ms-rte-autocomplete-selected {
+	color: rgb(0, 114, 188); border-top-color: rgb(156, 205, 238); border-bottom-color: rgb(121, 195, 244); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(232, 246, 254);
+}
+.ms-rte-autocomplete-modes div {
+	color: rgb(32, 33, 34); padding-right: 10px; padding-left: 20px; border-top-color: transparent; border-bottom-color: transparent; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.ms-rte-autocomplete-modes div.ms-rte-autocomplete-selected {
+	color: rgb(0, 114, 188); border-top-color: rgb(156, 205, 238); border-bottom-color: rgb(121, 195, 244); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(232, 246, 254);
+}
+.ms-rte-autocomplete-info {
+	padding-right: 10px; padding-left: 10px;
+}
+.ms-rte-layoutszone-outer {
+	float: left;
+}
+.ms-rte-layoutszone-inner {
+	margin: 1px; padding: 10px; border: 1px solid transparent; border-image: none; overflow: hidden; -ms-word-wrap: break-word;
+}
+.ms-rte-layoutszone-inner-editable {
+	margin: 1px; padding: 10px; border: 1px solid rgb(176, 213, 238); border-image: none; overflow: hidden; min-height: 100px !important;
+}
+.ms-rte-layoutszone-fixer {
+	clear: both;
+}
+.ms-rte-wpbox {
+	font: 8pt/normal Verdana, Arial, sans-serif; text-align: left; color: rgb(103, 103, 103); text-transform: none; text-indent: 0px; letter-spacing: normal; text-decoration: none; word-spacing: normal; white-space: normal;
+}
+.ms-rtestate-field {
+	-ms-word-wrap: break-word;
+}
+.ms-rtefield {
+	padding: 2px; min-width: 384px; background-color: rgb(255, 255, 255);
+}
+.ms-formbody .ms-rtefield {
+	border: 1px inset rgb(187, 187, 187); border-image: none;
+}

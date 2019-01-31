@@ -1,0 +1,162 @@
+body {
+	background-position: 35px 0px; padding-bottom: 30px; font-family: Arial, Helvetica, sans-serif; background-image: none !important; background-repeat: no-repeat; background-color: rgb(255, 255, 255);
+}
+#Container {
+	margin: auto; width: 977px;
+}
+#BannerGubernamental {
+	margin-bottom: 20px; background-color: rgb(255, 255, 255);
+}
+#header {
+	background-color: rgb(255, 255, 255);
+}
+#SiteBreadCrumb {
+	padding-top: 10px; padding-left: 20px; background-color: rgb(255, 255, 255);
+}
+#siteBreadCrumb a {
+	color: rgb(0, 0, 0);
+}
+#NavigationBar {
+	color: rgb(255, 255, 255); font-size: 18px; background-color: rgb(51, 51, 51);
+}
+#NavigationBar td {
+	padding-left: 0px;
+}
+.NavigationBarItem {
+	padding: 20px 5px; height: 50px; color: rgb(255, 255, 255); font-size: 13px; text-decoration: none; border-right-color: orange; border-right-width: 1px; border-right-style: solid;
+}
+.NavigationBarItem a:hover {
+	background: orange; color: rgb(51, 51, 51);
+}
+.NavigationBarItem a:link {
+	color: rgb(255, 255, 255);
+}
+.NavigationBarItem a:visited {
+	color: rgb(255, 255, 255);
+}
+.NavigationBarItem a:active {
+	color: rgb(255, 255, 255);
+}
+.NavigationBarFlyOutsItem a:link {
+	color: rgb(255, 255, 255);
+}
+.NavigationBarFlyOutsItem a:visited {
+	color: rgb(255, 255, 255);
+}
+.NavigationBarFlyOutsItem a:active {
+	color: rgb(255, 255, 255);
+}
+.NavigationBarFlyOuts {
+	background-color: rgb(51, 51, 51);
+}
+.NavigationBarFlyOutsItem {
+	background-color: rgb(51, 51, 51);
+}
+.NavigationBarFlyOutsItem {
+	padding: 5px; width: 100%; color: rgb(255, 255, 255); font-size: 12px;
+}
+.NavigationBarFlyOutsHover {
+	background: orange; color: rgb(51, 51, 51);
+}
+.NavigationBarFlyOutsSelected {
+	background: orange; color: rgb(51, 51, 51);
+}
+.ms-pagebreadcrumb {
+	display: none; visibility: hidden;
+}
+#MainBox {
+	background: rgb(255, 255, 255); padding: 15px 15px 15px 5px; height: auto; overflow: auto;
+}
+#MainBoxContent {
+	background: rgb(255, 255, 255); width: 925px; height: auto;
+}
+#MainMenu {
+	width: 274px; padding-right: 5px; float: left;
+}
+.AditionalAreaUnderMenu {
+	padding-top: 20px; margin-top: 100px;
+}
+#LayOutArea {
+	background: rgb(255, 255, 255); width: 630px; padding-left: 8px; float: left;
+}
+#SiteMap {
+	padding: 15px; color: rgb(51, 51, 51); clear: both; margin-bottom: 10px; background-color: rgb(204, 204, 204);
+}
+#footter {
+	padding: 10px 15px 15px; color: rgb(51, 51, 51); clear: both; background-color: rgb(255, 255, 255);
+}
+#CopyRight {
+	text-align: center; color: rgb(51, 51, 51); letter-spacing: 5px; font-size: 11px; margin-top: 15px; border-top-color: rgb(51, 51, 51); border-top-width: 1px; border-top-style: solid;
+}
+.accessibility {
+	height: 20px; padding-top: 5px; padding-left: 30px; font-size: 11px; margin-right: 40px; margin-left: 40px; display: block; background-image: none; background-repeat: no-repeat;
+}
+.FootLinks {
+	display: block; position: relative;
+}
+#footter a:link {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+#footter a:visited {
+	color: rgb(51, 51, 51); text-decoration: none;
+}
+span.FootLinks#normas {
+	padding-right: 20px; background-image: url("/images/menudark.gif"); background-repeat: no-repeat;
+}
+span.FootLinks#terminos {
+	padding-right: 20px; background-image: url("/images/menudark.gif"); background-repeat: no-repeat;
+}
+span.FootLinks#normas {
+	background-position: 78px 5px; left: 620px; top: -14px; width: 85px;
+}
+span.FootLinks#terminos {
+	background-position: 105px 5px; left: 750px; top: -28px; width: 105px;
+}
+.ms-navSubMenu1 {
+	padding: 5px 5px 0px; width: 100%;
+}
+table.menu-navitem td {
+	background-position: 0px 10px; padding: 5px 0px 4px 8px; width: 100%; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 13px; border-bottom-color: rgb(214, 214, 214); border-bottom-width: 1px; border-bottom-style: solid; background-image: url("/images/arrow.jpg"); background-repeat: no-repeat;
+}
+table.menu-Channel td {
+	background-position: 0px 10px; padding: 5px 0px 4px 8px; width: 100%; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 13px; border-bottom-color: rgb(214, 214, 214); border-bottom-width: 1px; border-bottom-style: solid; background-image: url("/images/arrow.jpg"); background-repeat: no-repeat;
+}
+.menu-navitem td {
+	background-image: none;
+}
+.menu-Channel td {
+	background-image: none;
+}
+a.menu-navitem {
+	color: rgb(105, 105, 105); font-weight: bold; background-image: none;
+}
+a.menu-Channel {
+	color: rgb(105, 105, 105); font-weight: bold; background-image: none;
+}
+.ToolsItem {
+	color: rgb(105, 105, 105); font-weight: bold; background-image: none;
+}
+.ms-WPBorder {
+	border: 0px currentColor; border-image: none;
+}
+.ms-WPBorderBorderOnly {
+	border: 0px currentColor; border-image: none;
+}
+.ms-WPHeader {
+	border: 0px currentColor; border-image: none;
+}
+.ContentDiv {
+	
+}
+.LayOutRightColumn {
+	background-color: rgb(153, 153, 153);
+}
+#MSOTlPn_MainTD {
+	top: 100px; width: 299px !important; height: 600px; right: 25px !important; display: block; position: fixed; z-index: 1000; -ms-overflow-y: auto;
+}
+#MSOTlPn_MainTD > table {
+	width: 100% !important; margin-right: 19px; position: static;
+}
+.ms-TPBorder {
+	width: 100% !important;
+}

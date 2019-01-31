@@ -1,0 +1,108 @@
+﻿@model IEnumerable<string>
+@{
+    /**/
+
+    ViewBag.Title = "Home Page";
+
+}
+@*@section Styles {
+        <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" type="text/css" />
+    }*@
+
+@using (Html.BeginForm("Teds_Update", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div id="divLoading" style="margin: 0px; padding: 0px; position: fixed; right: 0px;
+    top: 0px; width: 100%; height: 100%; background-color: #666666; z-index: 30001;
+    opacity: .8; filter: alpha(opacity=70);display:none">
+        <p style="position: absolute; top: 30%; left: 45%; color: White;">
+            <img src="~/Content/Images/loader4.gif" />
+            <br />
+            Loading, please wait...
+        </p>
+    </div>
+
+    <br />
+    <h3 class="ms-standardheader ms-WPTitle" style="text-align: center;">
+
+        <span>ACTUALIZACIÓN SEPS</span><span id="WebPartCaptionWPQ14"></span>
+    </h3>
+    <br />
+    <table class="auto-style3">
+      
+        <tr>
+
+            @*<td>&nbsp; &nbsp; &nbsp;</td>*@
+            <td>
+                @*<p class="ms-standardheader ms-WPTitle" style="text-align: center;">
+
+            *Si en la tabla "Archivos Encotrados" NO se encuentra algún <br />archivo de transacciones aceptadas por sistema TEDS, <br />favor seleccionarlo y agregarlo.* <br /><br />
+        </p>*@
+                <br />
+                <br />
+                @Html.TextBox("file", "", new { type = "file" })
+                <input type="submit" value="Transfer file" />
+                @ViewBag.Message
+            </td>
+            <td>
+
+                @*<div class="container-fluid">
+        <div class="card mb-2">*@
+
+                <p class="ms-standardheader ms-WPTitle" style="text-align: center;">
+
+                    *Si en la tabla de abajo <strong>NO</strong> se encuentra algún <br />archivo, favor agregarlos utilizando los botones<br /> "Choose File" y "Transfer File".* <br /><br />
+                </p>
+
+
+                <div class="card">
+                    <div class="card-header">
+
+                        <div class="row">
+
+                            <div class="text-center">
+                                <span>
+                                    Archivos Encontrados
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <table style="width: 100%;" class="table table-bordered table-hover">
+                        @*<tr>
+                    <td HeaderStyle-HorizontalAlign="Center">Nombre</td>
+                </tr>*@
+
+                        @foreach (var file in ViewData["Files"] as IEnumerable<string>)
+                        {
+                            <tr>
+                                <td HorizontalAlign="center">
+
+                                    <img style="width: 30px; height: 30px;" src="~/Content/Images/file_icon.png" />  &nbsp;&nbsp; @Path.GetFileName(file)
+                                </td>
+                            </tr>
+                        }
+
+
+
+                        @*<tr>
+                    <td class="auto-style3">End Date:</td>
+                    <td align="left">@Html.EditorFor(model => model.dtmDateEnd, new { htmlAttributes = new { @class = "datepicker" } })</td>
+                </tr>*@
+
+                    </table>
+
+
+                </div>
+
+                @*</div>
+        </div>*@
+
+</table>
+
+    <br />
+
+}
+
+
+

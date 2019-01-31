@@ -1,0 +1,67 @@
+﻿@using Microsoft.AspNet.Identity
+@using Portal_Generator_V1.Utilities
+
+<div id="top-bar" class="navbar-collapse collapse">
+
+    @if (Request.IsAuthenticated && (User.IsInRole("SuperAdmin") || User.IsInRole("Manager")))
+    {
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("TEDS EXTRACTIONS", "Teds", "Home")</li>
+            <li>@Html.ActionLink("UPDATE FROM TEDS", "Teds_Update", "Home")</li>
+            <li>@Html.ActionLink("ANNUAL REPORT", "SEPS_DB", "Home")</li>
+            <li>@Html.ActionLink("ADD USER", "Register", "Account")</li>
+            <li>@Html.ActionLink("USER ROLES", "AssignRole", "Account")</li>
+        </ul>
+
+    }
+
+    @if (Request.IsAuthenticated && User.IsInRole("SepsR") && User.IsInRole("TedsR") && !(User.IsInRole("SuperAdmin") || User.IsInRole("Manager")))
+    {
+
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("TEDS EXTRACTIONS", "Teds", "Home")</li>
+            <li>@Html.ActionLink("UPDATE FROM TEDS", "Teds_Update", "Home")</li>
+            <li>@Html.ActionLink("ANNUAL REPORT", "SEPS_DB", "Home")</li>
+        </ul>
+
+    }
+
+    @if (Request.IsAuthenticated && User.IsInRole("SepsR") && !User.IsInRole("TedsR") && !(User.IsInRole("SuperAdmin") || User.IsInRole("Manager")))
+    {
+
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("ANNUAL REPORT", "SEPS_DB", "Home")</li>
+        </ul>
+
+    }
+
+    @if (Request.IsAuthenticated && User.IsInRole("TedsR") && !User.IsInRole("SepsR") && !(User.IsInRole("SuperAdmin") || User.IsInRole("Manager")))
+    {
+
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("TEDS EXTRACTIONS", "Teds", "Home")</li>
+            <li>@Html.ActionLink("UPDATE FROM TEDS", "Teds_Update", "Home")</li>
+        </ul>
+
+    }
+
+    @if (Request.IsAuthenticated)
+    {
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+            </li>
+
+        </ul>
+    }
+    else{
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @Html.ActionLink("PLEASE LOG IN", "Login", "Account")
+        </li>
+        <li>
+            &nbsp; &nbsp;
+        </li>
+    </ul>
+    }
+</div>

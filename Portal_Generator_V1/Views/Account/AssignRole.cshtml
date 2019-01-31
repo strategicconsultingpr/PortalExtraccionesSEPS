@@ -1,0 +1,136 @@
+﻿@model IEnumerable<Portal_Generator_V1.Models.UserViewModel>
+@{
+    /**/
+
+    ViewBag.Title = "Assign Role to a User";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+@using (Html.BeginForm("AssignRole", "Account", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <hr />
+
+    @*<div class="form-group">
+            <label class="col-md-2 control-label">User Name</label>
+            <div class="col-md-10">
+                @Html.DropDownList("Emails", (IEnumerable<SelectListItem>)ViewBag.Emails, new { @class = "form-control"})
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Select Role</label>
+            <div class="col-md-10">
+                @Html.DropDownList("RoleName", (IEnumerable<SelectListItem>)ViewBag.Roles, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Change Role" />
+            </div>
+        </div>*@
+
+    <div class="form-group">
+        <label class="col-md-2 control-label">User Name</label>
+        <div class="col-md-10">
+            @Html.DropDownList("Emails", (IEnumerable<SelectListItem>)ViewBag.Emails, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Select Role</label>
+        <div class="col-md-10">
+            @Html.DropDownList("RoleName", (IEnumerable<SelectListItem>)ViewBag.Roles, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input name="submit" type="submit" class="btn btn-default" value="Add Role" />
+            <input name="submit" type="submit" class="btn btn-default" value="Delete Role" />
+        </div>
+    </div>
+}
+
+<div class="row">
+    @*<h4>Users with Roles</h4>
+
+    @foreach (var user in Model)
+    {
+        <p>
+            <strong>
+                @user.Email | @user.Role
+            </strong>
+        </p>
+    }*@
+</div>
+
+<br />
+<br />
+
+<div class="card">
+    <div class="card-header">
+
+        <div class="row">
+
+            <div class="text-center">
+                <span>
+                    Users with Roles
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <table style="width: 100%;" class="table table-bordered table-hover">
+        @*<tr>
+            <td HeaderStyle-HorizontalAlign="Center">Nombre</td>
+        </tr>*@
+
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>
+                    @user.Email 
+                </td>
+                <td>
+                    @user.Role
+                </td>
+            </tr>
+            
+        }
+
+
+
+        @*<tr>
+            <td class="auto-style3">End Date:</td>
+            <td align="left">@Html.EditorFor(model => model.dtmDateEnd, new { htmlAttributes = new { @class = "datepicker" } })</td>
+        </tr>*@
+
+    </table>
+
+
+</div>
+
+<script type="text/javascript">
+
+    function FillRoles() {
+
+        var Emails = $('#Emails').val();
+
+        $.ajax({
+            url: 'AssignRoleGet',
+            type: "GET",
+            dataType: "JSON",
+            data: { Emails: Emails },
+            success: function (response) {
+                console.log(response);
+            }
+        });
+    }
+
+</script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+}

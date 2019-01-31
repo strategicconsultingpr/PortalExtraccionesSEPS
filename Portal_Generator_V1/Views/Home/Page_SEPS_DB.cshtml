@@ -1,0 +1,132 @@
+﻿
+@model Portal_Generator_V1.Models.DatepickerModel2
+@{
+    /**/
+
+    ViewBag.Title = "Home Page";
+
+}
+@*@section Styles {
+        <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" type="text/css" />
+    }*@
+
+@using (Html.BeginForm("SEPS_DB","Home", FormMethod.Post, new { enctype = "multipart/form-data", id = "myform" }))
+{
+    <div id="divLoading" style="margin: 0px; padding: 0px; position: fixed; right: 0px;
+    top: 0px; width: 100%; height: 100%; background-color: #666666; z-index: 30001;
+    opacity: .8; filter: alpha(opacity=70);display:none">
+        <p style="position: absolute; top: 30%; left: 45%; color: White;">
+            <img src="~/Content/Images/loader4.gif" />
+            <br />
+            @*Generando Informe Anual, porfavor esperar...*@
+        </p>
+        <p style="position: absolute; top: 50%; left: 39%; color: White;">
+            Generando Informe Anual, porfavor esperar...
+        </p>
+    </div>
+
+    <br />
+    <table class="auto-style3">
+        <tr>
+            <td>&nbsp; &nbsp; &nbsp;</td>
+            <td>
+                <h3 class="ms-standardheader ms-WPTitle" style="text-align: center;">
+
+                    <span>INFORME ANUAL</span><span id="WebPartCaptionWPQ14"></span>
+                </h3>
+
+                <p><a href="https://www.samhsa.gov/" class="btn btn-info btn-link">Learn more &raquo;</a></p>
+
+                <h3 class="ms-standardheader ms-WPTitle" style="text-align: justify;">
+
+                    <span>Generación de Informe Anual </span><span id="WebPartCaptionWPQ14"></span>
+                </h3>
+
+                <p>
+                    <strong>Favor seleccionar el rango de fechas que desea utilizar para la generacón de la tabla:</strong>
+                </p>
+
+                <br />
+
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="col-xs-6">
+                    <div class="table-responsive">
+                        <table >
+                            <tr>
+                                <td style="text-align: center">Fecha Inical:</td>@*<td align="left">@Html.EditorFor(model => model.dtmDateStart, new { htmlAttributes = new { id = "start", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.dtmDateStart, "", new { @class = "text-danger" })</td>*@
+                                <td>&nbsp; &nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td class="auto-style3" style="text-align: center">Fecha Final: @*<td align="left">@Html.EditorFor(model => model.dtmDateEnd, new { htmlAttributes = new { id = "end", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.dtmDateEnd, "", new { @class = "text-danger" })</td>*@
+                                <td>&nbsp; &nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td class="auto-style3" style="text-align: center">Nombre de Tabla:  @*<td align="left">@Html.EditorFor(model => model.file, new { htmlAttributes = new { placeholder = "Informe_17-18", id = "file", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })</td>*@
+                                <td>&nbsp; &nbsp;</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="table-responsive">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>@Html.EditorFor(model => model.dtmDateStart, new { htmlAttributes = new { id = "start", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.dtmDateStart, "", new { @class = "text-danger" })</td>
+                                @*<td align="left">@Html.EditorFor(model => model.dtmDateStart, new { htmlAttributes = new { id = "start", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.dtmDateStart, "", new { @class = "text-danger" })</td>*@
+                                <td>&nbsp; &nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td class="auto-style3">@Html.EditorFor(model => model.dtmDateEnd, new { htmlAttributes = new { id = "end", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.dtmDateEnd, "", new { @class = "text-danger" })</td>
+                                @*<td align="left">@Html.EditorFor(model => model.dtmDateEnd, new { htmlAttributes = new { id = "end", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.dtmDateEnd, "", new { @class = "text-danger" })</td>*@
+                                <td>&nbsp; &nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td class="auto-style3">@Html.EditorFor(model => model.file, new { htmlAttributes = new { placeholder = "Nombre de Tabla", id = "file", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })</td>
+                                @*<td align="left">@Html.EditorFor(model => model.file, new { htmlAttributes = new { placeholder = "Informe_17-18", id = "file", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })</td>*@
+                                <td>&nbsp; &nbsp;</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <br />
+                &nbsp;
+                <div style="text-align: center;">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <input type="submit" value="Generar" class="btn btn-primary" />
+
+                    @*<label>@ViewBag.Message</label>*@
+                    <label for="lblMsg"></label>
+                </div>
+                @*@if(Session["links"].ToString() == "true")
+        {
+
+            <lable>DONE</lable>
+
+            @Html.ActionLink("TEDS_SA_AD.txt","File","Home", new { @Oldfile = "TEDS_SA_AD.txt", @Tedsfile = "SA_AD" }, null)
+        }*@
+</table>
+
+    <br />
+
+}
+
+
+
+@*@section Scripts{
+
+        <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+        <script>
+
+            $(function () {
+                $(".datepicker").datepicker();
+            });
+        </script>
+    }*@

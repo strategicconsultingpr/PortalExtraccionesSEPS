@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNet.Identity
+
+<div id="side-bar" class="dark-blue">
+    <div class="col-lg-12 ">
+        <img src="@Url.Content("~/Content/Images/logo-ASSMCAtrans.png")" style="width:100%; height:auto;" alt="" />
+    </div>
+    @if (Request.IsAuthenticated)
+    {
+        <a class="col-lg-12 navbar-fixed-bottom btn login-out-btn" href="javascript:document.getElementById('logoutForm').submit()">
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+        {
+        @Html.AntiForgeryToken()
+        <p class="col-lg-12 navbar-fixed-bottom login-out-btn btn"> <span class="glyphicon glyphicon-log-out text" style="padding-right:5px;" aria-hidden="true"></span>Log Out</p>
+        }
+        </a>
+    }
+    else
+    {
+    <center>
+        <a class="col-lg-12 navbar-fixed-bottom login-out-btn btn" href="@Url.Action("Login", "Account")"><span class="glyphicon glyphicon-log-in text" style="padding-right:5px;" aria-hidden="true"></span>Inicio  de Sesión</a>
+    </center>
+    }
+        
+    
+
+    </div>
