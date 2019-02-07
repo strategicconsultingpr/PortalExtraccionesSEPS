@@ -38,9 +38,9 @@ namespace Portal_Generator_V1.Models
 
         public String status { get; set; }
 
-        [Required]
-        [Display(Name = "FILE")]
-        public String file { get; set; }
+        //[Required]
+        //[Display(Name = "FILE")]
+        //public String file { get; set; }
     }
 
     public class DataLayer
@@ -461,8 +461,8 @@ namespace Portal_Generator_V1.Models
         {
 
 
-            string cmdStatus = "UPDATE [dbo].[SEPS-DB_Parameters] SET [Value] = '0' WHERE [Parameter] = 'status' ";
-            string cmdFileName = "UPDATE [dbo].[SEPS-DB_Parameters] SET [Value] = '0' WHERE [Parameter] = 'filename' ";
+            string cmdStatus = "UPDATE [dbo].[SEPS-DB_Parameters] SET [Value] = '1' WHERE [Parameter] = 'status' ";
+            string cmdFileName = "UPDATE [dbo].[SEPS-DB_Parameters] SET [Value] = '2' WHERE [Parameter] = 'filename' ";
 
             SqlConnection connection =
                 new SqlConnection(ConfigurationManager.ConnectionStrings[2].ConnectionString);
