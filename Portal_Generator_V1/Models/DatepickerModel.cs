@@ -38,9 +38,9 @@ namespace Portal_Generator_V1.Models
 
         public String status { get; set; }
 
-        [Required]
-        [Display(Name = "FILE")]
-        public String file { get; set; }
+        //[Required]
+        //[Display(Name = "FILE")]
+        //public String file { get; set; }
     }
 
     public class DataLayer
@@ -182,7 +182,7 @@ namespace Portal_Generator_V1.Models
             String result = "", resultFileName = "";
 
             sql = "SELECT [Value] FROM [dbo].[SEPS-DB_Parameters] WHERE[Parameter] = 'status'";
-            sqlFileName = "SELECT [Value] FROM [dbo].[SEPS-DB_Parameters] WHERE[Parameter] = 'filename'";
+         //   sqlFileName = "SELECT [Value] FROM [dbo].[SEPS-DB_Parameters] WHERE[Parameter] = 'filename'";
 
             sqlCnn = new SqlConnection(ConfigurationManager.ConnectionStrings[2].ConnectionString);
 
@@ -196,20 +196,21 @@ namespace Portal_Generator_V1.Models
             sqlReader.Close();
             sqlCmd.Dispose();
 
-            CmdFileName = new SqlCommand(sqlFileName, sqlCnn);
-            SqlDataReader sqlReaderFile = CmdFileName.ExecuteReader();
-            while (sqlReaderFile.Read())
-            {
-                resultFileName = sqlReaderFile.GetValue(0).ToString();
-            }
-            sqlReaderFile.Close();
-            CmdFileName.Dispose();
+            //CmdFileName = new SqlCommand(sqlFileName, sqlCnn);
+            //SqlDataReader sqlReaderFile = CmdFileName.ExecuteReader();
+            //while (sqlReaderFile.Read())
+            //{
+            //    resultFileName = sqlReaderFile.GetValue(0).ToString();
+            //}
+            //sqlReaderFile.Close();
+            //CmdFileName.Dispose();
 
 
 
             sqlCnn.Close();
 
-            if (result.Equals("1") && !resultFileName.Equals("0")) { value = true; }
+            //if (result.Equals("1") && !resultFileName.Equals("0")) { value = true; }
+            if (result.Equals("1")) { value = true; }
 
             return value;
         }
@@ -461,7 +462,7 @@ namespace Portal_Generator_V1.Models
 
 
             string cmdStatus = "UPDATE [dbo].[SEPS-DB_Parameters] SET [Value] = '0' WHERE [Parameter] = 'status' ";
-            string cmdFileName = "UPDATE [dbo].[SEPS-DB_Parameters] SET [Value] = '0' WHERE [Parameter] = 'filename' ";
+            string cmdFileName = "UPDATE [dbo].[SEPS-DB_Parameters] SET [Value] = '2' WHERE [Parameter] = 'filename' ";
 
             SqlConnection connection =
                 new SqlConnection(ConfigurationManager.ConnectionStrings[2].ConnectionString);
@@ -485,7 +486,7 @@ namespace Portal_Generator_V1.Models
         {
 
             //string text;
-            string cmdText = "execute [dbo].[SP_Informate_Datos_Anuales] ";
+            string cmdText = "execute [dbo].[SP_Informe_Datos_Anuales_sin_View] ";
 
             SqlConnection connection =
                 new SqlConnection(ConfigurationManager.ConnectionStrings[2].ConnectionString);
