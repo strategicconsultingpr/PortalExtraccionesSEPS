@@ -461,7 +461,7 @@ namespace Portal_Generator_V1.Models
         {
 
 
-            string cmdStatus = "UPDATE [dbo].[SEPS-DB_Parameters] SET [Value] = '1' WHERE [Parameter] = 'status' ";
+            string cmdStatus = "UPDATE [dbo].[SEPS-DB_Parameters] SET [Value] = '0' WHERE [Parameter] = 'status' ";
             string cmdFileName = "UPDATE [dbo].[SEPS-DB_Parameters] SET [Value] = '2' WHERE [Parameter] = 'filename' ";
 
             SqlConnection connection =
@@ -486,7 +486,7 @@ namespace Portal_Generator_V1.Models
         {
 
             //string text;
-            string cmdText = "execute [dbo].[SP_Informate_Datos_Anuales] ";
+            string cmdText = "execute [dbo].[SP_Informe_Datos_Anuales_sin_View] ";
 
             SqlConnection connection =
                 new SqlConnection(ConfigurationManager.ConnectionStrings[2].ConnectionString);

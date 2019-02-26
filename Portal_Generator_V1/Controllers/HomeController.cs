@@ -287,7 +287,7 @@ namespace Portal_Generator_V1.Controllers
 
                 Class1 mycls = new Class1();
                 mycls.ResetStatusSepsDB();
-             //   mycls.SQLjobSepsDB();
+                mycls.SQLjobSepsDB();
                 
                 do
                 {
