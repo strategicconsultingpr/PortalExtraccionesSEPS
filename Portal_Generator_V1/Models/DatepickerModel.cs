@@ -255,7 +255,8 @@ namespace Portal_Generator_V1.Models
                     error = "El archivo "+ result+ " ya existe, favor insertar otro nombre.";
                     break;
                 case "2":
-                    error = "El archivo " + result + " fué creado exitosamente. Favor acceder al documento 'ReportesAnuales' en el archivo 'Planificacion2' para poder utilizar la tabla creada.";
+                    //error = "El archivo " + result + " fué creado exitosamente. Favor acceder al documento 'ReportesAnuales' en el archivo 'Planificacion2' para poder utilizar la tabla creada.";
+                    error = "El archivo fué creado exitosamente. Favor acceder al documento 'ReportesAnuales' en el archivo 'INFORMES_ANUALES_PORTAL' dentro del archivo 'Planificacion2' para poder utilizar la tabla creada.";
                     break;
                 default:
                     error = "Hubo un error";
