@@ -47,6 +47,10 @@
 
     @if (Request.IsAuthenticated)
     {
+        <ul class="nav navbar-nav">
+            <li><a href="~/Content/Pdf/Manual sobre el Portal de Extracciones SEPS.pdf"><span>MANUAL DEL PORTAL</span></a></li>
+        </ul>
+
         <ul class="nav navbar-nav navbar-right">
             <li>
                 @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
@@ -64,4 +68,4 @@
         </li>
     </ul>
     }
-</div>
+    </div>
