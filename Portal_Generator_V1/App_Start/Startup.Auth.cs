@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using Portal_Generator_V1.Models;
+using static Portal_Generator_V1.EmailService;
 
 namespace Portal_Generator_V1
 {

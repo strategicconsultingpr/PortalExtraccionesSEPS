@@ -32,7 +32,7 @@
             <td>
                 <h3 class="ms-standardheader ms-WPTitle" style="text-align: center;">
 
-                    <span>INFORME ANUAL</span><span id="WebPartCaptionWPQ14"></span>
+                    <span>INFORME ANUAL EN ACCESS</span><span id="WebPartCaptionWPQ14"></span>
                 </h3>
 
                 <p><a href="https://www.samhsa.gov/" class="btn btn-info btn-link">Learn more &raquo;</a></p>
@@ -52,7 +52,7 @@
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="col-xs-6">
                     <div class="table-responsive">
-                        <table >
+                        <table>
                             <tr>
                                 <td style="text-align: center">Fecha Inical:</td>@*<td align="left">@Html.EditorFor(model => model.dtmDateStart, new { htmlAttributes = new { id = "start", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.dtmDateStart, "", new { @class = "text-danger" })</td>*@
                                 <td>&nbsp; &nbsp;</td>
@@ -63,10 +63,11 @@
                                 <td>&nbsp; &nbsp;</td>
                             </tr>
 
-                            <tr>
-                                <td class="auto-style3" style="text-align: center">Nombre de Tabla:  @*<td align="left">@Html.EditorFor(model => model.file, new { htmlAttributes = new { placeholder = "Informe_17-18", id = "file", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })</td>*@
+                            @*<tr>
+                                <td class="auto-style3" style="text-align: center">Nombre de Tabla:
                                 <td>&nbsp; &nbsp;</td>
-                            </tr>
+                            </tr>*@
+                            @*<td align="left">@Html.EditorFor(model => model.file, new { htmlAttributes = new { placeholder = "Informe_17-18", id = "file", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })</td>*@
 
                         </table>
                     </div>
@@ -86,11 +87,12 @@
                                 <td>&nbsp; &nbsp;</td>
                             </tr>
 
-                            <tr>
+                            @*<tr>
                                 <td class="auto-style3">@Html.EditorFor(model => model.file, new { htmlAttributes = new { placeholder = "Nombre de Tabla", id = "file", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })</td>
-                                @*<td align="left">@Html.EditorFor(model => model.file, new { htmlAttributes = new { placeholder = "Informe_17-18", id = "file", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })</td>*@
+
                                 <td>&nbsp; &nbsp;</td>
-                            </tr>
+                            </tr>*@
+                            @*<td align="left">@Html.EditorFor(model => model.file, new { htmlAttributes = new { placeholder = "Informe_17-18", id = "file", autocomplete = "off" } })@Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })</td>*@
 
                         </table>
                     </div>
