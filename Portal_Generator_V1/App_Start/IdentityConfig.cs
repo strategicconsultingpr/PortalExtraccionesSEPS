@@ -37,12 +37,33 @@ namespace Portal_Generator_V1
 
             AlternateView imgview = AlternateView.CreateAlternateViewFromString(message.Body, null, MediaTypeNames.Text.Html);
 
+            LinkedResource lr = new LinkedResource("//vassmcaweb/wwwroot/LEY22/images/logo_1.jpg");
+            lr.ContentId = "logo_1";
+            lr.ContentType.MediaType = "image/jpg";
+            imgview.LinkedResources.Add(lr);
+
+            lr = new LinkedResource("//vassmcaweb/wwwroot/LEY22/images/logo_2.png");
+            lr.ContentId = "logo_2";
+            lr.ContentType.MediaType = "image/png";
+            imgview.LinkedResources.Add(lr);
+
+            lr = new LinkedResource("//vassmcaweb/wwwroot/LEY22/images/twitter-circle-colored.png");
+            lr.ContentId = "twitter";
+            lr.ContentType.MediaType = "image/png";
+            imgview.LinkedResources.Add(lr);
+
+            lr = new LinkedResource("//vassmcaweb/wwwroot/LEY22/images/facebook-circle-colored.png");
+            lr.ContentId = "facebook";
+            lr.ContentType.MediaType = "image/png";
+            imgview.LinkedResources.Add(lr);
+
             MailMessage msg = new MailMessage();
             msg.From = new MailAddress("aortiz@assmca.pr.gov", "Portal Extracciones");
             msg.To.Add(new MailAddress(message.Destination));
             msg.Subject = message.Subject;
             msg.AlternateViews.Add(imgview);
-            
+            msg.Body = lr.ContentId;
+
 
             SmtpClient smtpClient = new SmtpClient("vassmcaweb", Convert.ToInt32(25));
             System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("aortiz@assmca.pr.gov", "Alexie@16");
