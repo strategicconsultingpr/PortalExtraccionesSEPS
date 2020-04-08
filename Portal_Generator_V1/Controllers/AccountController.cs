@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -334,13 +335,32 @@ namespace Portal_Generator_V1.Controllers
                 // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                 // Send an email with this link
                  string code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
-                 var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);		
-                 await UserManager.SendEmailAsync(user.Id, "Recuperar Contraseña", "Para crear una nueva contraseña, favor presionar <a href=\"" + callbackUrl + "\">Aqui</a>");
-                 return RedirectToAction("ForgotPasswordConfirmation", "Account");
+                 var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                //await UserManager.SendEmailAsync(user.Id, "Recuperar Contraseña", "Para crear una nueva contraseña, favor presionar <a href=\"" + callbackUrl + "\">Aqui</a>");
+                string body = CreateBody(callbackUrl, user.Email, user.UserName);
+
+                await UserManager.SendEmailAsync(user.Id, "Recuperar Contraseña", body);
+                return RedirectToAction("ForgotPasswordConfirmation", "Account");
             }
 
             // If we got this far, something failed, redisplay form
             return View(model);
+        }
+
+        private string CreateBody(string Code, string FirstName, string LastName)
+        {
+            string body = string.Empty;
+            string code = "<a href =\"" + Code + "\" class=\"es-button\" target=\"_blank\" style=\"mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:18px;color:#4A7EB0;border-style:solid;border-color:#EFEFEF;border-width:10px 25px;display:inline-block;background:#EFEFEF;border-radius:0px;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;\">Crear Contraseña</a>";
+
+            using (StreamReader reader = new StreamReader(Server.MapPath("~/Htmls/ForgotPassword.html")))
+            {
+                body = reader.ReadToEnd();
+            }
+            body = body.Replace("{NombreCompleto}", FirstName + " " + LastName);
+            body = body.Replace("{botonCrear}", code);
+
+            return body;
+
         }
 
         //
