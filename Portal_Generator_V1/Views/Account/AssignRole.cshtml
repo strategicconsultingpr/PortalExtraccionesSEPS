@@ -2,7 +2,7 @@
 @{
     /**/
 
-    ViewBag.Title = "Assign Role to a User";
+    ViewBag.Title = "ASIGNAR ROLES A USUARIOS";
 }
 
 <h2>@ViewBag.Title.</h2>
@@ -32,21 +32,21 @@
         </div>*@
 
     <div class="form-group">
-        <label class="col-md-2 control-label">User Name</label>
+        <label class="col-md-2 control-label">Correo Electrónico</label>
         <div class="col-md-10">
             @Html.DropDownList("Emails", (IEnumerable<SelectListItem>)ViewBag.Emails, new { @class = "form-control" })
         </div>
     </div>
     <div class="form-group">
-        <label class="col-md-2 control-label">Select Role</label>
+        <label class="col-md-2 control-label">Seleccione Rol</label>
         <div class="col-md-10">
             @Html.DropDownList("RoleName", (IEnumerable<SelectListItem>)ViewBag.Roles, new { @class = "form-control" })
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input name="submit" type="submit" class="btn btn-default" value="Add Role" />
-            <input name="submit" type="submit" class="btn btn-default" value="Delete Role" />
+            <input name="submit" type="submit" class="btn btn-default" value="Agregar Rol" />
+            <input name="submit" type="submit" class="btn btn-default" value="Eliminar Rol" />
         </div>
     </div>
 }
@@ -74,7 +74,7 @@
 
             <div class="text-center">
                 <span>
-                    Users with Roles
+                    Usuarios Existente y sus Roles
                 </span>
             </div>
         </div>

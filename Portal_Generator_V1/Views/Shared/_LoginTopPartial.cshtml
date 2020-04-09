@@ -9,8 +9,8 @@
             <li>@Html.ActionLink("TEDS EXTRACTIONS", "Teds", "Home")</li>
             <li>@Html.ActionLink("UPDATE FROM TEDS", "Teds_Update", "Home")</li>
             <li>@Html.ActionLink("ANNUAL REPORT", "SEPS_DB", "Home")</li>
-            <li>@Html.ActionLink("ADD USER", "Register", "Account")</li>
-            <li>@Html.ActionLink("USER ROLES", "AssignRole", "Account")</li>
+            @*<li>@Html.ActionLink("ADD USER", "Register", "Account")</li>
+            <li>@Html.ActionLink("USER ROLES", "AssignRole", "Account")</li>*@
         </ul>
 
     }
@@ -48,13 +48,38 @@
     @if (Request.IsAuthenticated)
     {
         <ul class="nav navbar-nav">
-            <li><a href="~/Content/Pdf/Manual sobre el Portal de Extracciones SEPS.pdf"><span>MANUAL DEL PORTAL</span></a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">DOCUMENTOS</a>
+                <div class="dropdown-menu">
+                    <a href="~/Content/Pdf/Manual sobre el Portal de Extracciones SEPS.pdf"><span>MANUAL DEL PORTAL</span></a>
+                </div>
+            </li>
+
+            @*<li><a href="~/Content/Pdf/Manual sobre el Portal de Extracciones SEPS.pdf"><span>MANUAL DEL PORTAL</span></a></li>*@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-            <li>
-                @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Hola @Context.User.Identity.GetUserName() ! </a>
+                @if ((User.IsInRole("SuperAdmin") || User.IsInRole("Manager")))
+                {
+                    <div class="dropdown-menu">
+                        @Html.ActionLink("MI PERFIL", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })<br />
+                        @Html.ActionLink("AGREGAR USUARIO", "Register", "Account")<br />
+                        @Html.ActionLink("ROLES USUARIOS", "AssignRole", "Account")
+
+                    </div>
+                }
+                else
+                {
+                    <div class="dropdown-menu">
+                        @Html.ActionLink("MI PERFIL", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                    </div>
+                }
             </li>
+            @*<li>
+                @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+            </li>*@
 
         </ul>
     }
