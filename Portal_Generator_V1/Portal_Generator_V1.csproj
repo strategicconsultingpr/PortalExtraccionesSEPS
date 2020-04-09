@@ -217,10 +217,12 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\coin-slider-styles.css" />
+    <Content Include="Content\color.css" />
     <Content Include="Content\controls.css" />
     <Content Include="Content\corev4.css" />
     <Content Include="Content\Images\file_icon.png" />
     <Content Include="Content\Images\loader4.gif" />
+    <Content Include="Content\Images\Login_Background.png" />
     <Content Include="Content\Images\LOGO-ASSMCA.jpg" />
     <Content Include="Content\Images\logo-ASSMCAtrans.png" />
     <Content Include="Content\Images\LogoSAMHSACorto.png" />
@@ -338,6 +340,7 @@
     <Content Include="Views\Home\Page_Teds_to_Seps.cshtml" />
     <Content Include="Views\Home\SEPS_DB.cshtml" />
     <Content Include="Views\Home\Page_SEPS_DB.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
