@@ -66,7 +66,7 @@ namespace Portal_Generator_V1
 
 
             SmtpClient smtpClient = new SmtpClient("vassmcaweb", Convert.ToInt32(25));
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("aortiz@assmca.pr.gov", "Alexie@16");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential(ConfigurationManager.AppSettings["Email"].ToString(), ConfigurationManager.AppSettings["Password"].ToString());//"aortiz@assmca.pr.gov", "Alexie@16");
             smtpClient.Credentials = credentials;
             //smtpClient.EnableSsl = true;
             smtpClient.Send(msg);
