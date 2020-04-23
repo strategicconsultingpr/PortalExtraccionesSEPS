@@ -233,6 +233,13 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ReportTemplate.aspx.cs">
+      <DependentUpon>ReportTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportTemplate.aspx.designer.cs">
+      <DependentUpon>ReportTemplate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Utilities\Utilities.cs" />
@@ -301,6 +308,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Htmls\ForgotPassword.html" />
+    <Content Include="Reports\ReportTemplate.aspx" />
     <Content Include="ReportViewerWebForm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -380,6 +388,7 @@
     <Content Include="Views\Home\Page_Teds_to_Seps.cshtml" />
     <Content Include="Views\Home\SEPS_DB.cshtml" />
     <Content Include="Views\Home\Page_SEPS_DB.cshtml" />
+    <Content Include="Views\Home\ReportTemplate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

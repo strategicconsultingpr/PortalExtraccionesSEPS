@@ -315,6 +315,10 @@ namespace Portal_Generator_V1.Controllers
             return RedirectToAction("SEPS_DB");
         }
 
+        public ActionResult ReportTemplate()
+        {
+            return View();
+        }
 
     }
         
