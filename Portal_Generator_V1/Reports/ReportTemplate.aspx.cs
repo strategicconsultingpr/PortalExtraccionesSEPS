@@ -1,6 +1,8 @@
 ﻿using Microsoft.Reporting.WebForms;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -19,14 +21,38 @@ namespace Portal_Generator_V1.Reports
                 {
                     //String reportFolder = "http://vhermes/ReportServer?/";
 
+                    //rvSiteMapping.Height = Unit.Pixel(800 - 58);
+                    //rvSiteMapping.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Remote;
+                    //IReportServerCredentials irsc = new CustomReportCredentials("ASSMCA_NET/alexie.ortiz", "Alexie@16","assmca.local"); // e.g.: ("demo-001", "123456789", "ifc")
+                    //rvSiteMapping.ServerReport.ReportServerCredentials = irsc;
+                    //rvSiteMapping.ServerReport.ReportServerUrl = new Uri("http://192.168.100.24//ReportServer"); // Add the Reporting Server URL  
+                    //rvSiteMapping.ServerReport.ReportPath = "/Informes de Portal Extracciones/Informe Anual";
                     rvSiteMapping.Height = Unit.Pixel(800 - 58);
-                    rvSiteMapping.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Remote;
-                    IReportServerCredentials irsc = new CustomReportCredentials("ASSMCA_NET/alexie.ortiz", "Alexie@16","assmca.local"); // e.g.: ("demo-001", "123456789", "ifc")
-                    rvSiteMapping.ServerReport.ReportServerCredentials = irsc;
-                    rvSiteMapping.ServerReport.ReportServerUrl = new Uri("http://192.168.100.24//ReportServer"); // Add the Reporting Server URL  
-                    rvSiteMapping.ServerReport.ReportPath = "/Informes de Portal Extracciones/Informe Anual";
+                    rvSiteMapping.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Local;
+                    rvSiteMapping.LocalReport.ReportPath = Server.MapPath("~/Reports/Report1.rdlc");
 
-                    rvSiteMapping.ServerReport.Refresh();
+                    dsReport dsrep = new dsReport();
+
+                    SqlCommand cmd = new SqlCommand();
+
+                    var thisConnString = ConfigurationManager.ConnectionStrings["SEPSConnectionString"].ConnectionString;
+
+                    SqlConnection thisConn = new SqlConnection(thisConnString);
+                    //thisConn.Open();
+                    cmd.Connection = thisConn;
+
+                    cmd.CommandText = string.Format("[dbo].[SP_Informe_Datos_Anuales_Internet]");
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                    //System.Data.DataSet thisDataSet = new System.Data.DataSet();
+                    da.Fill(dsrep,"PORTAL_INFORME");
+                    //thisConn.Close();
+
+                    ReportDataSource datasource = new ReportDataSource("dsReport",dsrep.Tables[0]);
+                    rvSiteMapping.LocalReport.DataSources.Clear();
+                    rvSiteMapping.LocalReport.DataSources.Add(datasource);
+                    //rvSiteMapping.ServerReport.Refresh();
                 }
                 catch (Exception ex)
                 {
