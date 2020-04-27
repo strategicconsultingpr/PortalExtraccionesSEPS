@@ -233,11 +233,6 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reports\dsReport.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsReport.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Reports\ReportTemplate.aspx.cs">
       <DependentUpon>ReportTemplate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -322,17 +317,6 @@
     </Content>
     <Content Include="Content\Pdf\Manual sobre el Portal de Extracciones SEPS.pdf" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Reports\dsReport.xsc">
-      <DependentUpon>dsReport.xsd</DependentUpon>
-    </Content>
-    <None Include="Reports\dsReport.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsReport.Designer.cs</LastGenOutput>
-    </None>
-    <Content Include="Reports\dsReport.xss">
-      <DependentUpon>dsReport.xsd</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -421,9 +405,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Reports\Report1.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
