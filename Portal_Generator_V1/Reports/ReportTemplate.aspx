@@ -10,6 +10,17 @@
 <body style="margin: 0px; padding: 0px;">
     <form id="form1" runat="server">
         <div>
+            <div class="col-md-2">
+                <strong>Seleccionar Reporte Deseado: </strong>
+            </div>
+            <div class="col-md-10">
+            <asp:DropDownList runat="server" ID="ddlReportes" OnSelectedIndexChanged="ddlReportes_Cambio" AutoPostBack="true">
+                <asp:ListItem value="/Informes de Portal Extracciones/Informe Anual" Text="Informe Anual" />
+                <asp:ListItem value="/Informes Sistema de Perfiles/RPT_TEDS" Text="Reporte2" />
+            </asp:DropDownList>
+            </div>
+        </div>
+        <div>
             <asp:ScriptManager ID="ScriptManagerReport" runat="server">
                <%-- <Scripts>
                     <asp:ScriptReference Assembly="ReportViewerForMvc" Name="ReportViewerForMvc.Scripts.PostMessage.js" />
