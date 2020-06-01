@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ReportTemplate.aspx.cs" Inherits="Portal_Generator_V1.Reports.ReportTemplate" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ReportesTEDS_SEPS.aspx.cs" Inherits="Portal_Generator_V1.Reports.ReportesTEDS_SEPS" %>
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 
 <!DOCTYPE html>
@@ -16,7 +16,10 @@
                 <th><span >Seleccionar Reporte Deseado: </span></th>
                 <td>
                 <asp:DropDownList runat="server" ID="ddlReportes" OnSelectedIndexChanged="ddlReportes_Cambio" AutoPostBack="true">
-                    <asp:ListItem value="Informe Anual" Text="INFORME ANUAL" />
+                    <asp:ListItem value="AD_SM_TEDS-SEPS MATCH" Text="AD | SALUD MENTAL" />
+                    <asp:ListItem value="AD_AS_TEDS-SEPS MATCH" Text="AD | ABUSO SUSTANCIA" />
+                    <asp:ListItem value="DIS_SM_TEDS-SEPS MATCH" Text="AL | SALUD MENTAL" />
+                    <asp:ListItem value="DIS_AS_TEDS-SEPS MATCH" Text="AL | ABUSO SUSTANCIA" />
                 </asp:DropDownList>
                 </td>
             </tr>

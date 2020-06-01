@@ -10,7 +10,7 @@
 namespace Portal_Generator_V1.Reports {
     
     
-    public partial class ReportTemplate {
+    public partial class ReportesTEDS_SEPS {
         
         /// <summary>
         /// nombreReporte control.

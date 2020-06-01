@@ -233,6 +233,13 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ReportesTEDS_SEPS.aspx.cs">
+      <DependentUpon>ReportesTEDS_SEPS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportesTEDS_SEPS.aspx.designer.cs">
+      <DependentUpon>ReportesTEDS_SEPS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Reports\ReportTemplate.aspx.cs">
       <DependentUpon>ReportTemplate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -308,6 +315,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Htmls\ForgotPassword.html" />
+    <Content Include="Reports\ReportesTEDS_SEPS.aspx" />
     <Content Include="Reports\ReportTemplate.aspx" />
     <Content Include="ReportViewerWebForm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -389,6 +397,7 @@
     <Content Include="Views\Home\SEPS_DB.cshtml" />
     <Content Include="Views\Home\Page_SEPS_DB.cshtml" />
     <Content Include="Views\Home\ReportTemplate.cshtml" />
+    <Content Include="Views\Home\ReportesTEDS_SEPS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

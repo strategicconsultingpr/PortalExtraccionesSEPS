@@ -320,6 +320,11 @@ namespace Portal_Generator_V1.Controllers
             return View();
         }
 
+        public ActionResult ReportesTEDS_SEPS()
+        {
+            return View();
+        }
+
     }
         
     
