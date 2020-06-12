@@ -16,7 +16,8 @@
                 <th><span >Seleccionar Reporte Deseado: </span></th>
                 <td>
                 <asp:DropDownList runat="server" ID="ddlReportes" OnSelectedIndexChanged="ddlReportes_Cambio" AutoPostBack="true">
-                    <asp:ListItem value="Informe Anual" Text="INFORME ANUAL" />
+                    <asp:ListItem value="Informe Anual Fecha" Text="INFORME ANUAL" />
+                    <%--<asp:ListItem value="Informe Anual" Text="INFORME ANUAL" />--%>
                 </asp:DropDownList>
                 </td>
             </tr>
