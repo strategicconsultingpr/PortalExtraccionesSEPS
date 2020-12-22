@@ -4,9 +4,10 @@
 }
 
 <h2>@ViewBag.Title.</h2>
-@if (ViewBag.alert == "good")
+@if (@ViewBag.alert != null)
 {
     <script>
+       // alert(@ViewBag.alert);
         alert('Se agregó el nuevo usuario correctamente.');
     </script>
 }

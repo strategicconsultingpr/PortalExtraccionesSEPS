@@ -157,6 +157,7 @@ namespace Portal_Generator_V1.Controllers
         //[AllowAnonymous]
         public ActionResult Register()
         {
+            ViewBag.alert = null;
             if ((String)Session["alert"] != null)
             {
                 ViewBag.alert = (String)Session["alert"];
@@ -197,7 +198,15 @@ namespace Portal_Generator_V1.Controllers
                     //IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
                     return RedirectToAction("Register", "Account");
                 }
-                AddErrors(result);
+                else
+                {
+                    AddErrors(result);
+                    //Session.Add("alert", result.Errors.First());
+                    //return RedirectToAction("Register", "Account");
+                    ViewBag.Roles = context.Roles.Select(r => new SelectListItem { Value = r.Name, Text = r.Name }).ToList();
+                }
+                
+
             }
 
             // If we got this far, something failed, redisplay form

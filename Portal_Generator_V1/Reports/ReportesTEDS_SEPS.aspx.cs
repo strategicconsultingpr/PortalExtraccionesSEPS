@@ -84,7 +84,7 @@ namespace Portal_Generator_V1.Reports
 
             rvSiteMapping.Height = Unit.Pixel(800 - 58);
             rvSiteMapping.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Remote;
-            IReportServerCredentials irsc = new CustomReportCredentials("alexie.ortiz", "Alexie@2021", "assmca.local"); // e.g.: ("demo-001", "123456789", "ifc")
+            IReportServerCredentials irsc = new CustomReportCredentials("alexie.ortiz", "Alexie@21", "assmca.local"); // e.g.: ("demo-001", "123456789", "ifc")
             rvSiteMapping.ServerReport.ReportServerCredentials = irsc;
             rvSiteMapping.ServerReport.ReportServerUrl = new Uri("http://192.168.100.24//ReportServer"); // Add the Reporting Server URL  
             rvSiteMapping.ServerReport.ReportPath = "/Informes de Portal Extracciones/" + ddlReportes.SelectedValue;
