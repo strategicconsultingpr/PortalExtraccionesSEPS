@@ -8,7 +8,15 @@
     <title></title>
 </head>
 <body style="margin: 0px; padding: 0px;">
-    <h2> <asp:Label runat="server" ID="nombreReporte"/> </h2>
+    <div style="margin-left:auto; margin-right: auto; text-align:center">
+
+        <h2> <asp:Label runat="server" ID="nombreReporte"/> </h2>
+
+        <h4> <asp:Label runat="server" ID="descripcionReporte" /> </h4>
+
+    </div>
+    
+
     <form id="form1" runat="server">
         <div class="table-panel-body">
         <table class="table table-striped table-hover">
@@ -18,6 +26,7 @@
                 <asp:DropDownList runat="server" ID="ddlReportes" OnSelectedIndexChanged="ddlReportes_Cambio" AutoPostBack="true">
                     <asp:ListItem value="Informe Anual Fecha" Text="INFORME ANUAL" />
                     <asp:ListItem value="SAEP" Text="SAEP" />
+                    <asp:ListItem value="Reporte de Calidad (SEPS)" Text="Reporte de Calidad (SEPS)" />
                     <%--<asp:ListItem value="Informe Anual" Text="INFORME ANUAL" />--%>
                 </asp:DropDownList>
                 </td>

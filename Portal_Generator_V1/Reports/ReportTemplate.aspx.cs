@@ -78,10 +78,17 @@ namespace Portal_Generator_V1.Reports
             if(ddlReportes.Text == "INFORME ANUAL")
             {
                 nombreReporte.Text = "INFORME ANUAL";
+                descripcionReporte.Text = "";
             }
             else if (ddlReportes.Text == "SAEP")
             {
                 nombreReporte.Text = "SAEP";
+                descripcionReporte.Text = "El SAEP es un sistema de generación de informes de alertas por programa/centro para mantener actualizadas las evaluaciones de progreso de los clientes. Los analistas de la UEE utilizan el sistema como herramienta para reportar el registro de los clientes admitidos o evaluados en SEPS en un periodo de 5 meses. El informe se envía a los representantes de los programas/centro para que puedan mantener el progreso de los clientes.";
+            }
+            else if (ddlReportes.Text == "Reporte de Calidad (SEPS)")
+            {
+                nombreReporte.Text = "Reporte de Calidad (SEPS)";
+                descripcionReporte.Text = "";
             }
             else
             {
