@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Portal_Generator_V1.Reports {
-    
-    
-    public partial class ReportesTEDS_SEPS {
-        
+namespace Portal_Generator_V1.Reports
+{
+
+
+    public partial class ReportesTEDS_SEPS
+    {
+
         /// <summary>
         /// nombreReporte control.
         /// </summary>
@@ -20,7 +22,16 @@ namespace Portal_Generator_V1.Reports {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label nombreReporte;
-        
+
+        /// <summary>
+        /// descripcionReporte control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label descripcionReporte;
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -29,7 +40,7 @@ namespace Portal_Generator_V1.Reports {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// ddlReportes control.
         /// </summary>
@@ -38,7 +49,7 @@ namespace Portal_Generator_V1.Reports {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlReportes;
-        
+
         /// <summary>
         /// ScriptManagerReport control.
         /// </summary>
@@ -47,7 +58,7 @@ namespace Portal_Generator_V1.Reports {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.ScriptManager ScriptManagerReport;
-        
+
         /// <summary>
         /// rvSiteMapping control.
         /// </summary>

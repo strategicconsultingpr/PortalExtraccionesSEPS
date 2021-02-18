@@ -8,7 +8,15 @@
     <title></title>
 </head>
 <body style="margin: 0px; padding: 0px;">
-    <h2> <asp:Label runat="server" ID="nombreReporte"/> </h2>
+    <div style="margin-left:auto; margin-right: auto; text-align:center">
+
+        <h2> <asp:Label runat="server" ID="nombreReporte"/> </h2>
+
+        <h4> <asp:Label runat="server" ID="descripcionReporte" /> </h4>
+
+    </div>
+
+
     <form id="form1" runat="server">
         <div class="table-panel-body">
         <table class="table table-striped table-hover">

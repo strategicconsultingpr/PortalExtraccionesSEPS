@@ -79,7 +79,8 @@ namespace Portal_Generator_V1.Reports
             }
             else
             {
-                nombreReporte.Text = "TEDS-SEPS MATCH";
+                nombreReporte.Text = "REPORTES COMPARATIVOS TEDS – SEPS";
+                descripcionReporte.Text = "Este sistema genera cuatro archivos: uno de admisión de salud mental, uno de admisiones de sustancias, uno de altas/evaluaciones de salud mental y uno de alta de sustancias. Los archivos contienen las variables de contenidas en los archivos de TEDS, según requeridas por SAMHSA. Las variables de TEDS se encuentran alineadas a las variables de SEPS a que ayuda a comparar ambas base de datos (“crosswalk). Estos archivos permiten realizan análisis de datos entre TEDS y SEPS para poder explicar/contestar las preguntas de los representantes de SAMHSA, con respecto a diferencias de registros entre años y preguntas sobre la calidad de los datos de Puerto Rico. Además, el informe ayuda a evaluar la calidad interna de archivos gereados para TEDS y comparación con los datos registrados en SEPS. ";
             }
 
             rvSiteMapping.Height = Unit.Pixel(800 - 58);

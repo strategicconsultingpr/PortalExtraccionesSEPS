@@ -75,10 +75,10 @@ namespace Portal_Generator_V1.Reports
 
         void GenerarReportes()
         {
-            if(ddlReportes.Text == "INFORME ANUAL")
+            if(ddlReportes.Text == "INFORME ANUAL ")
             {
-                nombreReporte.Text = "INFORME ANUAL";
-                descripcionReporte.Text = "";
+                nombreReporte.Text = "Informe Anual de SEPS";
+                descripcionReporte.Text = "Este reporte es una extracción de la base de datos de clientes registrados en el Sistema Electrónico de Perfiles Sociodemográfico de la ASSMCA (SEPS). El propósito del reporte genera una matriz por líneas (caso ) y columnas (variables). El reporte tiene varias opciones de selección:  programas de la ASSMCA, rango de fecha del perfil y  tipo de perfil, sea admisión (AD), Evaluación (EV) y/o Alta (AL). El reporte puede ser extraídos en varios formatos entre ellos XLM, CSV, Excel y TIFF file.  Para detalles de la base de datos y cómo trabarla, el usuario debe hacer referencia al Manual de Recopilación de Datos Estadísticos preparado por la UEE, que contiene el diccionario de datos de la base.  Los usuarios son profesionales especializado en análisis de datos estadísticos, como bioestadísticos,  evaluadores, epidemiólogos, demógrafos entre otros de la UEE. ";
             }
             else if (ddlReportes.Text == "SAEP")
             {
@@ -88,13 +88,15 @@ namespace Portal_Generator_V1.Reports
             else if (ddlReportes.Text == "Reporte de Calidad (SEPS)")
             {
                 nombreReporte.Text = "Reporte de Calidad (SEPS)";
-                descripcionReporte.Text = "";
+                descripcionReporte.Text = "Con este sistema se pueden generar  generar informes seleccionado por Programa de la ASSMCA, rango de fecha, tipo de perfil (Admisión,  Evaluación y Alta). Además, se puede hacer selección de los niveles de cuidado de los programas, sea por Nivel de Cuidado de Salud Mental, Nivel de Cuidado de Sustancias o ambos. El informe es utilizado por el personal de la UEE, para monitorear la calidad de los datos de clientes registrados en el SEPS. Los informes podrán ser utilizados para podrán utilizados para comparar y reconcialiar o cuadrar  los informes mensuales de clientela atendida (IMCA) enviados por los programas de la ASSMCA al analista de calidad de la UEE.  El analista tiene la facilidad de poder enviar el  informe en varios formatos: Excel, PDF, Word al personal designado en los Programas.  El reporte contiene la siguiente información: Nombre del Programa, Nivel de Cuidado, Tipo de Perfil, Fecha de último contacto con el paciente, número de identificador unico (IUP), Número de Expediente, utimos cuatro dígitos de seguro social, nombre del paciente, número de episodio, fecha de alta, fecha de edición y el usuario que registró el perfil. ";
             }
             else
             {
-                nombreReporte.Text = "TEDS-SEPS MATCH";
+                nombreReporte.Text = "Informe Anual de SEPS";
+                descripcionReporte.Text = "Este reporte es una extracción de la base de datos de clientes registrados en el Sistema Electrónico de Perfiles Sociodemográfico de la ASSMCA (SEPS). El propósito del reporte genera una matriz por líneas (caso ) y columnas (variables). El reporte tiene varias opciones de selección:  programas de la ASSMCA, rango de fecha del perfil y  tipo de perfil, sea admisión (AD), Evaluación (EV) y/o Alta (AL). El reporte puede ser extraídos en varios formatos entre ellos XLM, CSV, Excel y TIFF file.  Para detalles de la base de datos y cómo trabarla, el usuario debe hacer referencia al Manual de Recopilación de Datos Estadísticos preparado por la UEE, que contiene el diccionario de datos de la base.  Los usuarios son profesionales especializado en análisis de datos estadísticos, como bioestadísticos,  evaluadores, epidemiólogos, demógrafos entre otros de la UEE. ";
+
             }
-            
+
             rvSiteMapping.Height = Unit.Pixel(800 - 58);
             rvSiteMapping.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Remote;
             IReportServerCredentials irsc = new CustomReportCredentials("alexie.ortiz", "Alexie@1912", "assmca.local"); // e.g.: ("demo-001", "123456789", "ifc")
