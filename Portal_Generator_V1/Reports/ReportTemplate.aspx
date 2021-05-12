@@ -27,6 +27,7 @@
                     <asp:ListItem value="Informe Anual Fecha" Text="INFORME ANUAL" />
                     <asp:ListItem value="SAEP" Text="SAEP" />
                     <asp:ListItem value="Reporte de Calidad (SEPS)" Text="Reporte de Calidad (SEPS)" />
+                    <asp:ListItem value="Observatorio" Text="Admisiones SEPS para Observatorio de Sustancias" />
                     <%--<asp:ListItem value="Informe Anual" Text="INFORME ANUAL" />--%>
                 </asp:DropDownList>
                 </td>
